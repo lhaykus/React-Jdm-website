@@ -5,10 +5,12 @@ import Categories from '../components/Categories';
 
 const Home = () => {
   return (
-    <Navbar />,
+    <div>
     <HeroImage />,
-    <Categories />
-  )
+    <Categories/>
+    </div>
+  
+  );
 }
 
 export default Home;

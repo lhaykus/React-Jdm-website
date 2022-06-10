@@ -9,7 +9,6 @@ function App() {
   return (
     <div>
     <Navbar />
-    <HeroImage />
     <Routes>
        <Route path = '/' element ={<Home />} />
        <Route path = '/login' element={<Login />} />

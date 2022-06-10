@@ -6,6 +6,7 @@ import './Navbar.css';
 import '../App.css';
 import styled from 'styled-components';
 import { Badge } from '@material-ui/core';
+import HeroImage from './HeroImage';
 
 
 
@@ -54,13 +55,15 @@ const Navbar = () => {
 
                         </ul>
                         {button && <Button buttonStyle='btn--outline'>Sign Up</Button>}
+                       
 
 
                     </div>
                 </div>
             </nav>
+          
         </>
-        // <Container>Navbar</Container>
+        
     )
 }
 
