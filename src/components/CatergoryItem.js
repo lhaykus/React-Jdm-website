@@ -1,14 +1,18 @@
 import React from 'react';
-import styled from 'styled-components';
+import './Category.css';
+import { Button } from '@material-ui/core';
 
-const Container = styled.div`
-   
 
-`;
-
-const CatergoryItem = ({item}) => {
+const CatergoryItem = ({ item }) => {
   return (
-   <div>hello</div>
+   <div>
+    <div className='category-title'>{item.title}</div>
+    <img src={item.img} className='category-img'/>
+    <br /><br />
+    <div>
+        <Button className='category-btn'>Shop Now</Button>
+    </div>
+   </div>
   )
 }
 

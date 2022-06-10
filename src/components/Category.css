@@ -1,0 +1,22 @@
+.category-container {
+    display: flex;
+    padding: 30px;
+    margin: 20px;
+    justify-content:space-around;
+}
+
+.category-img {
+    width: 100px;
+
+}
+
+.category-title {
+    font-size: large;
+    margin: 10px;
+    padding: 10px;
+
+}
+
+.category-btn {
+    margin: 50px;
+}
