@@ -4,6 +4,8 @@ import Home from './pages/Home';
 import Navbar from './components/Navbar';
 import Login from './components/Login';
 import HeroImage from './components/HeroImage';
+import ProductList from './pages/ProductList';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -12,7 +14,9 @@ function App() {
     <Routes>
        <Route path = '/' element ={<Home />} />
        <Route path = '/login' element={<Login />} />
+       <Route path = '/shop' element={<ProductList />} />
      </Routes>
+     <Footer />
     </div>
   );
 }
