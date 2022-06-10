@@ -4,6 +4,7 @@ import { Button } from './Button';
 import './HeroImage.css';
 import { Link } from 'react-router-dom';
 
+
 function HeroImage() {
   return (
     <div className='hero-image-container'>
@@ -24,6 +25,7 @@ function HeroImage() {
         
 
     </div>
+   
   )
 }
 
