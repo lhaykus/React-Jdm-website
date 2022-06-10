@@ -1,11 +1,11 @@
-import { Button, TextField, Grid } from '@material-ui/core';
+import { Button, TextField, Grid, Container } from '@material-ui/core';
 import { Send } from '@material-ui/icons';
 import React from 'react';
 import './Newsletter.css';
 
 const Newsletter = () => {
     return (
-        <div className='newsletter-container'>
+        <section className='newsletter-container'>
             <div>
                 <div className='newsletter-title'>Sign up for our newsletter!</div>
                 <div className='newsletter-description'>Get the latest updates from us!</div>
@@ -16,12 +16,12 @@ const Newsletter = () => {
                 >
                     <TextField id="standard-basic" label="Email Address" />
                 
-                    <Button className='newsletter-btn'>
+                    <Button className='newsletter-btn' color='pink'>
                         <Send />
                     </Button>
                     </Grid>
                 </div>
-            </div>
+            </section>
 
     )
 }

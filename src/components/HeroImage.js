@@ -1,8 +1,9 @@
 import React from 'react';
 import '../App.css';
-import { Button } from './Button';
 import './HeroImage.css';
 import { Link } from 'react-router-dom';
+import { Button} from '@material-ui/core';
+
 
 
 function HeroImage() {
@@ -10,11 +11,11 @@ function HeroImage() {
     <div className='hero-image-container'>
     
         <h1>The world of JDM Legends</h1>
-        <Link to ='/' className='hero-btn-link'>
+        <Link to ='/login' className='hero-btn-link'>
         <div className='hero-btn'>
-            <Button className='btns' 
-            buttonStyle= 'btn--outline'
-            buttonSize ='btn-large'>
+            <Button className='btns'
+            variant="contained"
+            color='secondary'>
                 Sign In
             </Button>
             </div>

@@ -2,9 +2,10 @@ import React from 'react';
 import './Login.css';
 import { Link } from 'react-router-dom';
 
+
 function Login() {
   return (
-    <div className='login'>
+    <section className='login'>
         <div className='login-container'>
             <h1>Sign In</h1>
             <form>
@@ -18,7 +19,7 @@ function Login() {
             <button className='signup-btn'>Sign Up</button>
 
         </div>
-    </div>
+    </section>
   )
 }
 
