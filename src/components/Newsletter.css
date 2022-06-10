@@ -1,0 +1,38 @@
+.newsletter-container {
+    margin: 100px;
+    padding: 20px;
+    height: 30vh;
+    background-color: azure;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+
+
+}
+
+.newsletter-title {
+    font-size: 200%;
+    margin: 50px;
+    text-align: center;
+
+}
+
+.newsletter-description {
+    font-size: 150%;
+    text-align: center;
+
+}
+
+#standard-basic {
+    align-items: center;
+    text-align: center;
+}
+
+
+.newsletter-btn {
+
+}
+
+.input-container {
+
+}

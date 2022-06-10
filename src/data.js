@@ -41,16 +41,4 @@ export const popularProducts = [
         id: 6,
         img: 'https://i.etsystatic.com/31925221/r/il/0506bb/3533563958/il_fullxfull.3533563958_78x5.jpg'
     },
-    {
-        id: 7,
-        img: 'https://www.vividracing.com/blog/wp-content/uploads/TE37-350Z-Wheels-Blog.jpg'
-    },
-    {
-        id: 8,
-        img: 'https://m.media-amazon.com/images/I/61I724i47aL._AC_SX355_.jpg'
-    },
-    {
-        id: 9,
-        img: 'https://i.etsystatic.com/31925221/r/il/0506bb/3533563958/il_fullxfull.3533563958_78x5.jpg'
-    },
 ];
