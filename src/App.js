@@ -6,17 +6,23 @@ import Login from './components/Login';
 import HeroImage from './components/HeroImage';
 import ProductList from './pages/ProductList';
 import Footer from './components/Footer';
+import IndividualProduct from './pages/IndividualProduct';
+import LearnMore from './pages/LearnMore';
 
 function App() {
   return (
     <div>
+   
     <Navbar />
     <Routes>
        <Route path = '/' element ={<Home />} />
        <Route path = '/login' element={<Login />} />
        <Route path = '/shop' element={<ProductList />} />
+       <Route path = '/product' element={<IndividualProduct />} />
+       <Route path = '/learnmore' element={<LearnMore />} />
      </Routes>
      <Footer />
+  
     </div>
   );
 }

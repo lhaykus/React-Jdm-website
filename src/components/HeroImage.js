@@ -15,7 +15,7 @@ function HeroImage() {
         <div className='hero-btn'>
             <Button className='btns'
             variant="contained"
-            color='secondary'>
+            color='primary'>
                 Sign In
             </Button>
             </div>

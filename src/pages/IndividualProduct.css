@@ -1,0 +1,30 @@
+.ind-product {
+    padding: 50px;
+    display: flex;
+
+}
+
+.img-container {
+    flex: 1;
+}
+
+.indiv-img {
+    width: 30%;
+    height: 50%;
+    object-fit: cover;
+
+}
+
+.info-container {
+    flex: 1;
+    padding: 0px 50px;
+
+}
+
+h1 {
+    font-size: 200%;
+}
+
+.description-container {
+    margin: 20px 0px;
+}

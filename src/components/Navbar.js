@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { Button } from './Button';
+import { Button } from '@material-ui/core';
 import { ShoppingBasketOutlined, ShoppingCart } from '@material-ui/icons';
 import './Navbar.css';
 import '../App.css';
@@ -43,27 +43,36 @@ const Navbar = () => {
                                 <Link to='/shop' className='nav-links' onClick={closedMobileMenu}>Shop</Link>
                             </li>
                             <li className='nav-item'>
-                                <Link to='/learnmore' className='nav-links' onClick={closedMobileMenu}>Learn More</Link>
+                                <Link to='/product' className='nav-links' onClick={closedMobileMenu}>Individual Product</Link>
                             </li>
                             <li className='nav-item'>
-                                <Badge badgeContent={4} className='shopping-basket'>
-                                    <ShoppingBasketOutlined />
-                                </Badge>
-
+                                <Link to='/learnmore' className='nav-links' onClick={closedMobileMenu}>Learn More</Link>
                             </li>
+
 
 
                         </ul>
-                        {button && <Button buttonStyle='btn--outline'>Sign Up</Button>}
-                       
+                        <Link to='/login' className='navbar-btn-link'>
+                            <div className='nav-btn'>
+                                <Button className='btns'
+                                    variant="contained"
+                                    color='primary'>
+                                    Sign In
+                                </Button>
+                            </div>
+                        </Link>
+                        <Badge badgeContent={4} className='shopping-basket'>
+                            <ShoppingBasketOutlined />
+                        </Badge>
+
 
 
                     </div>
                 </div>
             </nav>
-          
+
         </>
-        
+
     )
 }
 
