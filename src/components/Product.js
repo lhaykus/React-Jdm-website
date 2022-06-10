@@ -7,16 +7,17 @@ const Product = ({ item }) => {
         <div className='individual-product-container'>
             <div className='product-info'>
                 <img src={item.img} className='product-img' />
-                <div className='icon'>
+                <div className='basket-icon'>
                     <ShoppingBasketOutlined />
                 </div>
-                <div className='icon'>
+                <div className='favorite-icon'>
                     <Favorite />
                 </div>
             </div>
 
 
         </div>
+        
     )
 }
 

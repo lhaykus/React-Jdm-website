@@ -1,15 +1,36 @@
 .individual-product-container {
     flex: 1;
     margin: 5px;
-    margin-top: 15%;
+    min-width: 500px;
+    height: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background-color: azure;
+
 }
 
 .product-info {
-    padding: 50px;
+    padding: 30px;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+   
 }
 
 .product-img {
     width: 100%;
     height: 100%;
     object-fit: contain;
+}
+
+.favorite-icon {
+    color: blueviolet;
 }
