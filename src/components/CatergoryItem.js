@@ -5,13 +5,12 @@ import { Button } from '@material-ui/core';
 
 const CatergoryItem = ({ item }) => {
     return (
-        <div>
-
+        <div className='category-item-container'>
             <img src={item.img} className='category-img' />
             <br /><br />
-            <div>
+            <div className='category-info'>
                 <div className='category-title'>{item.title}</div>
-                <Button className='category-btn'>Shop Now</Button>
+                <Button variant='contained' color='secondary' className='category-btn'>Shop Now</Button>
             </div>
         </div>
     )
