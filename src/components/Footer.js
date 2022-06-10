@@ -20,8 +20,8 @@ const Footer = () => {
             <FileCopyIcon style={{ color: "#D714EA", fontSize: '500%', padding: '20px' }} />
         </Link>
     </Container>
-    <div>@
-        <Link className='footer' href='https://github.com/lhaykus' target='_blank'>DragonWhisperer</Link>
+    <div className='footer-text'> 
+        <Link style={{color:'white', textAlign:'center'}}  href='https://github.com/lhaykus' target='_blank'>@DragonWhisperer</Link>
     </div>
 </section>
   )
