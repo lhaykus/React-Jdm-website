@@ -10,8 +10,8 @@ h1 {
 }
 
 .performance-hero-image {
-    background: url('../assets/images/performance.jpg') center center/cover no-repeat;
-    height: 40vh;
+    background: url('../assets/images/speed.jpg') center center/cover no-repeat;
+    height: 50vh;
     width: 100%;
     display: flex;
     flex-direction: column;
