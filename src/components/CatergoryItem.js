@@ -1,6 +1,7 @@
 import React from 'react';
 import './Category.css';
-import { Container, Button } from '@material-ui/core';
+import { Container, Button} from '@material-ui/core';
+import { Link } from 'react-router-dom';
 
 
 const CatergoryItem = ({ item }) => {
@@ -10,7 +11,10 @@ const CatergoryItem = ({ item }) => {
             <br /><br />
             <div className='category-info'>
                 <div className='category-title'>{item.title}</div>
-                <Button variant='contained' color='secondary' className='category-btn'>Shop Now</Button>
+                <Link to='/shop' className='item-btn-link'>
+                    <Button variant='contained' color='secondary'
+                        className='category-btn'>Shop Now</Button>
+                </Link>
             </div>
         </Container>
     )

@@ -22,9 +22,6 @@ function HeroImage() {
             </Link>
             <div>
         </div>
-      
-        
-
     </div>
    
   )
