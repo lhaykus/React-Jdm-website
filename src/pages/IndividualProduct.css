@@ -37,3 +37,26 @@ p {
     margin: 20px 0px;
     font-size: 30px;
 }
+
+.add-to-cart-btn {
+    padding: 5px;
+}
+
+.cart-wrapper {
+    width: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 50px;
+}
+
+.add-amount {
+    width: 40px;
+    height: 30px;
+    border-radius: 10px;
+    border: 1px solid hotpink;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+}
