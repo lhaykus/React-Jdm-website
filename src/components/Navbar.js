@@ -61,9 +61,11 @@ const Navbar = () => {
                                 </Button>
                             </div>
                         </Link>
+                        <Link to ='/cart'>
                         <Badge badgeContent={4} className='shopping-basket'>
                             <ShoppingBasketOutlined />
                         </Badge>
+                        </Link>
 
 
 

@@ -2,6 +2,10 @@ h1 {
     font-size: 200%;
 }
 
+#signup-container {
+    margin-bottom: 25%;
+}
+
 .signup-btn {
     margin: 30px;
     display: flex;

@@ -4,7 +4,7 @@ import './Signup.css';
 
 const Signup = () => {
   return (
-    <section>
+    <section id='signup-container'>
         <h1>Create an Account</h1>
        <Box component='form' className='signup-form'>
         <TextField id='signup-input' label='First Name' variant='outlined' />
