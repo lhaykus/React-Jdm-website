@@ -1,3 +1,29 @@
 h1 {
     font-size: 200%;
 }
+
+.signup-btn {
+    margin: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 10%;
+    cursor:crosshair;
+}
+
+.signup-form {
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 40px;
+
+}
+
+#signup-input {
+    flex: 1;
+    margin: 20px 10px 0px 0px;
+    padding: 10px;
+}
