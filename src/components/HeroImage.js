@@ -8,7 +8,7 @@ import { Button} from '@material-ui/core';
 
 function HeroImage() {
   return (
-    <div className='hero-image-container'>
+    <section className='hero-image-container'>
     
         <h1>The world of JDM Legends</h1>
         <Link to ='/login' className='hero-btn-link'>
@@ -22,7 +22,7 @@ function HeroImage() {
             </Link>
             <div>
         </div>
-    </div>
+    </section>
    
   )
 }

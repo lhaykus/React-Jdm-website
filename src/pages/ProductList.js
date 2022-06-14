@@ -3,6 +3,7 @@ import Products from './Products';
 import './ProductList.css';
 import './ProductList.css';
 import styled from "styled-components";
+import { Container } from '@material-ui/core';
 
 const Filter = styled.div`
  
@@ -22,7 +23,7 @@ const ProductList = () => {
         <section>
             <div className='performance-hero-image'></div>
             <h1>Performance Parts</h1>
-            <div className='filter-container'>
+            <Container className='filter-container'>
                 <div className='select-filter'>
                     <div className='filter-text'>Filter Products:</div>
                     <Filter className='filter'>
@@ -33,7 +34,7 @@ const ProductList = () => {
                     </Select>
                     </Filter>
                 </div>
-            </div>
+            </Container>
             <div className='filter-container'>
                 <div className='sort-filter'>
                     <div className='filter-text'>Sort Products:</div>
