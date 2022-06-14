@@ -1,11 +1,12 @@
 .ind-product {
     padding: 50px;
-    display: flex;
 
 }
 
 .img-container {
     flex: 1;
+    padding: 50px;
+    display: flex;
 }
 
 .indiv-img {
@@ -23,8 +24,16 @@
 
 h1 {
     font-size: 200%;
+    text-align: center;
+    margin: 20px;
+}
+
+p {
+    font-size: 300%;
+    padding: 50px;
 }
 
 .description-container {
     margin: 20px 0px;
+    font-size: 30px;
 }
