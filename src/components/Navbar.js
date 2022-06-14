@@ -1,13 +1,14 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { Button } from '@material-ui/core';
+import { Button, useTheme, useMediaQuery } from '@material-ui/core';
 import { ShoppingBasketOutlined, ShoppingCart } from '@material-ui/icons';
 import './Navbar.css';
 import '../App.css';
 import styled from 'styled-components';
 import { Badge } from '@material-ui/core';
 import HeroImage from './HeroImage';
-
+import { mobile } from '../responsive';
+import DrawerComponent from './DrawerComponent';
 
 
 const Navbar = () => {
@@ -25,8 +26,13 @@ const Navbar = () => {
         }
     }
 
+    const theme = useTheme();
+    const isMatch = useMediaQuery(theme.breakpoints.down('sm'));
+
     return (
+        
         <>
+        {isMatch ? (<DrawerComponent />) : (
             <nav className='navbar'>
                 <section className='navbar-container'>
                     <div className='navbar-container'>
@@ -72,10 +78,9 @@ const Navbar = () => {
                     </div>
                 </section>
             </nav>
-
+        )}
         </>
-
-    )
+        )
 }
 
 export default Navbar;

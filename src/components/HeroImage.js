@@ -2,13 +2,13 @@ import React from 'react';
 import '../App.css';
 import './HeroImage.css';
 import { Link } from 'react-router-dom';
-import { Button} from '@material-ui/core';
+import { Button, Box } from '@material-ui/core';
 
 
 
 function HeroImage() {
   return (
-    <section className='hero-image-container'>
+    <Box className='hero-image-container'>
     
         <h1>The world of JDM Legends</h1>
         <Link to ='/login' className='hero-btn-link'>
@@ -22,7 +22,7 @@ function HeroImage() {
             </Link>
             <div>
         </div>
-    </section>
+    </Box>
    
   )
 }

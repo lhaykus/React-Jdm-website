@@ -1,7 +1,8 @@
 import React from 'react';
 import './Cart.css';
-import { Container, Button } from '@material-ui/core';
+import { Container, Button, Box } from '@material-ui/core';
 import { Link } from 'react-router-dom';
+import gears from '../assets/images/gears.jpg';
 
 const Cart = () => {
   return (
@@ -15,7 +16,28 @@ const Cart = () => {
         <Link to='/checkout'>
           <Button className='cart-btns' variant='outlined'>Check Out</Button>
         </Link>
-      </Container>
+        </Container>
+        <Box className='cart-items-box'>
+          <div className='product'>
+            <img src = {gears} />
+            <div className='product-details'>
+              <p><b>Gears</b></p>
+              <p className='product-id'>121321324654</p>
+              <p className='product-price'>$30</p>
+
+            </div>
+          </div>
+        </Box>
+
+
+
+
+
+
+
+
+     
+
     </section>
   )
 }

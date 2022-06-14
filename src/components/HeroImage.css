@@ -40,7 +40,12 @@ video {
 @media screen and (max-width:960px) {
     .hero-image-container h1 {
         font-size: 60px;
-        margin-top: -500px;
+        margin-top: -300px;
         text-align: center;
+    }
+
+    .hero-image-container  {
+       height: 60vh;
+       
     }
 }

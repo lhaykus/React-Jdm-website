@@ -13,7 +13,7 @@ function Login() {
         <br />
         <TextField id='login-input' label='Password' variant='outlined' />
         <br />
-        <Button className='login-btn' variant='contained' color='secondary'>Sign In</Button>
+        <Button className='login-btn' variant='contained' color='secondary'>Log In</Button>
         <br/>
         <Link to='/signup'>
         <Button className='register-btn' variant='contained' color='primary'>Sign Up</Button>
