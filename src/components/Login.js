@@ -16,7 +16,9 @@ function Login() {
                 <input type="password" />
                 <button type='submit' className='login-btn'>Sign In</button>
             </form>
+            <Link to ='/signup'>
             <button className='signup-btn'>Sign Up</button>
+            </Link>
 
         </div>
     </section>

@@ -9,6 +9,7 @@ import Footer from './components/Footer';
 import IndividualProduct from './pages/IndividualProduct';
 import LearnMore from './pages/LearnMore'; 
 import Scroll from './components/Scroll';
+import Signup from './components/Signup';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
        <Route path = '/shop' element={<ProductList />} />
        <Route path = '/product' element={<IndividualProduct />} />
        <Route path = '/learnmore' element={<LearnMore />} />
+       <Route path ='signup' element={<Signup />} />
      </Routes>
      <Footer />
      <Scroll showBelow={250} />
