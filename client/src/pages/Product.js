@@ -4,7 +4,7 @@ import './Product.css';
 
 const Product = ({ item }) => {
     return (
-        <div className='individual-product-container'>
+        <div className='product-container'>
             <div className='product-info'>
                 <img src={item.img} className='product-img' />
                 <div className='basket-icon'>

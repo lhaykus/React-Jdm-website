@@ -1,4 +1,4 @@
-.individual-product-container {
+.product-container {
     flex: 1;
     margin-top: 10%;
     min-width: 500px;
@@ -33,4 +33,17 @@
 
 .favorite-icon {
     color: blueviolet;
+}
+
+
+@media screen and (max-width: 960px) {
+    .product-img {
+        width: 50%;
+        height: 50%;
+     
+    }
+
+    .product-container {
+        flex-wrap: nowrap;
+    }
 }

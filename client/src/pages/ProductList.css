@@ -13,6 +13,7 @@ h1 {
     background: url('../assets/images/speed.jpg') center center/cover no-repeat;
     height: 50vh;
     width: 100%;
+    object-fit: contain;
     display: flex;
     flex-direction: column;
     justify-content: center;

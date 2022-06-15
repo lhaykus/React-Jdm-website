@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Button, useTheme, useMediaQuery } from '@material-ui/core';
-import { ShoppingBasketOutlined, ShoppingCart } from '@material-ui/icons';
+import { ShoppingBasketOutlined} from '@material-ui/icons';
 import './Navbar.css';
 import '../App.css';
 import styled from 'styled-components';

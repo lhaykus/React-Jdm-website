@@ -5,6 +5,8 @@ import {
 } from '@material-ui/core';
 import MenuIcon from '@material-ui/icons/Menu';
 import { Link } from 'react-router-dom';
+import { Badge } from '@material-ui/core';
+import { ShoppingBasketOutlined} from '@material-ui/icons';
 
 
 const useStyles = makeStyles(theme => ({
@@ -64,8 +66,12 @@ const DrawerComponent = () => {
                             </Typography>
                         </ListItemText>
                     </ListItem>
-
                 </List>
+                <Link to ='/cart'>
+                        <Badge badgeContent={4} className='shopping-basket'>
+                            <ShoppingBasketOutlined />
+                        </Badge>
+                        </Link>
 
             </Drawer>
             <IconButton className={classes.menuIcon} style={{ color: 'black'}} onClick={() => setOpenDrawer(!openDrawer)}>
