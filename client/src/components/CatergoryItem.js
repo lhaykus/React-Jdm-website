@@ -11,7 +11,7 @@ const CatergoryItem = ({ item }) => {
             <br /><br />
             <div className='category-info'>
                 <div className='category-title'>{item.title}</div>
-                <Link to='/shop' className='item-btn-link'>
+                <Link to={`/products/${item.category}`} className='item-btn-link'>
                     <Button variant='contained' color='secondary'
                         className='category-btn'>Shop Now</Button>
                 </Link>

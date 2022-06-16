@@ -1,6 +1,8 @@
 import { ShoppingBasketOutlined, Favorite } from '@material-ui/icons';
 import React from 'react';
 import './Product.css';
+import { useLocation } from "react-router-dom";
+import { useEffect, useState } from "react";
 
 const Product = ({ item }) => {
     return (

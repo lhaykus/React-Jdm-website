@@ -46,10 +46,10 @@ const Navbar = () => {
                                 <Link to='/' className='nav-links' onClick={closedMobileMenu}>Home</Link>
                             </li>
                             <li className='nav-item'>
-                                <Link to='/shop' className='nav-links' onClick={closedMobileMenu}>Shop</Link>
+                                <Link to='/products/:category' className='nav-links' onClick={closedMobileMenu}>Shop</Link>
                             </li>
                             <li className='nav-item'>
-                                <Link to='/product' className='nav-links' onClick={closedMobileMenu}>Individual Product</Link>
+                                <Link to='/product/:id' className='nav-links' onClick={closedMobileMenu}>Individual Product</Link>
                             </li>
                             <li className='nav-item'>
                                 <Link to='/learnmore' className='nav-links' onClick={closedMobileMenu}>Learn More</Link>

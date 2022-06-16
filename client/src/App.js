@@ -1,5 +1,5 @@
 import './App.css';
-import { HashRouter as Router, Routes, Route } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route, Redirect } from 'react-router-dom';
 import Home from './pages/Home';
 import Navbar from './components/Navbar';
 import Login from './pages/Login';
@@ -19,9 +19,9 @@ function App() {
     <Navbar />
     <Routes>
        <Route path = '/' element ={<Home />} />
-       <Route path = '/login' element={<Login />} />
-       <Route path = '/shop' element={<ProductList />} />
-       <Route path = '/product' element={<IndividualProduct />} />
+       <Route path = '/login' element={<Login />}  />
+       <Route path = '/products/:category' element={<ProductList />} />
+       <Route path = '/product/:id' element={<IndividualProduct />} />
        <Route path = '/learnmore' element={<LearnMore />} />
        <Route path ='/signup' element={<Signup />} />
        <Route path ='/cart' element={<Cart />} />

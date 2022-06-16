@@ -9,7 +9,7 @@ const Cart = () => {
     <section>
       <h1>Your Cart</h1>
       <Container id='cart-container'>
-        <Link to='/shop'>
+        <Link to='/products'>
           <Button id='cart-btns' variant='outlined'>Continue Shopping</Button>
         </Link>
         <br /><br />

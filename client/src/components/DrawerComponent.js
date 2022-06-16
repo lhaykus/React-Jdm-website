@@ -42,7 +42,7 @@ const DrawerComponent = () => {
                     <ListItem divider button style={{ backgroundColor: 'black', color: '#D231EB' }} >
                         <ListItemText inset >
                             <Typography variant='title'>
-                                <Link to='/shop' style={{ color: '#D231EB', fontSize: '30px' }}>
+                                <Link to='/products' style={{ color: '#D231EB', fontSize: '30px' }}>
                                     Shop
                                 </Link>
                             </Typography>

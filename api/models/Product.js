@@ -23,9 +23,13 @@ const productSchema = new Schema({
         min: 0,
         default: 0
     },
-    catergories: {
+    categories: {
         type: Array,
-    }
+    },
+    inStock: {
+        type: Boolean, 
+        default: true,
+    },
 });
 
 
