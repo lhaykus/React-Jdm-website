@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { Button, useTheme, useMediaQuery } from '@material-ui/core';
-import { ShoppingBasketOutlined} from '@material-ui/icons';
+import { Button, useTheme, useMediaQuery, List, Menu, MenuItem, ListItem } from '@material-ui/core';
+import { ShoppingBasketOutlined } from '@material-ui/icons';
 import './Navbar.css';
 import '../App.css';
 import styled from 'styled-components';
@@ -30,57 +30,51 @@ const Navbar = () => {
     const isMatch = useMediaQuery(theme.breakpoints.down('sm'));
 
     return (
-        
+
         <>
-        {isMatch ? (<DrawerComponent />) : (
-            <nav className='navbar'>
-                <section className='navbar-container'>
-                    <div className='navbar-container'>
-                        <Link to='/' className='navbar-logo'>JDM
-                        </Link>
-                        <div className='menu-icon' onClick={handleClick}>
-                            <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
-                        </div>
-                        <ul className={click ? 'nav-menu active' : 'nav-menu'}>
-                            <li className='nav-item'>
-                                <Link to='/' className='nav-links' onClick={closedMobileMenu}>Home</Link>
-                            </li>
-                            <li className='nav-item'>
-                                <Link to='/products/:category' className='nav-links' onClick={closedMobileMenu}>Shop</Link>
-                            </li>
-                            <li className='nav-item'>
-                                <Link to='/product/:id' className='nav-links' onClick={closedMobileMenu}>Individual Product</Link>
-                            </li>
-                            <li className='nav-item'>
-                                <Link to='/learnmore' className='nav-links' onClick={closedMobileMenu}>Learn More</Link>
-                            </li>
-
-
-
-                        </ul>
-                        <Link to='/login' className='navbar-btn-link'>
-                            <div className='nav-btn'>
-                                <Button className='btns'
-                                    variant="contained"
-                                    color='primary'>
-                                    Sign In
-                                </Button>
+            {isMatch ? (<DrawerComponent />) : (
+                <nav className='navbar'>
+                    <section className='navbar-container'>
+                        <div className='navbar-container'>
+                            <Link to='/' className='navbar-logo'>JDM
+                            </Link>
+                            <div className='menu-icon' onClick={handleClick}>
+                                <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
                             </div>
-                        </Link>
-                        <Link to ='/cart'>
-                        <Badge badgeContent={4} className='shopping-basket'>
-                            <ShoppingBasketOutlined />
-                        </Badge>
-                        </Link>
-
-
-
-                    </div>
-                </section>
-            </nav>
-        )}
+                            <List className={click ? 'nav-menu active' : 'nav-menu'}>
+                                <ListItem className='nav-item'>
+                                    <Link to='/' className='nav-links' onClick={closedMobileMenu}>Home</Link>
+                                </ListItem>
+                                <ListItem className='nav-item'>
+                                    <Link to='/products' className='nav-links' onClick={closedMobileMenu}>Shop</Link>
+                                </ListItem>
+                                <ListItem className='nav-item'>
+                                    <Link to='/product/:id' className='nav-links' onClick={closedMobileMenu}>Individual Product</Link>
+                                </ListItem>
+                                <ListItem className='nav-item'>
+                                    <Link to='/learnmore' className='nav-links' onClick={closedMobileMenu}>Learn More</Link>
+                                </ListItem>
+                            </List>
+                            <Link to='/login' className='navbar-btn-link'>
+                                <div className='nav-btn'>
+                                    <Button className='btns'
+                                        variant="contained"
+                                        color='primary'>
+                                        Sign In
+                                    </Button>
+                                </div>
+                            </Link>
+                            <Link to='/cart'>
+                                <Badge badgeContent={4} className='shopping-basket'>
+                                    <ShoppingBasketOutlined />
+                                </Badge>
+                            </Link>
+                        </div>
+                    </section>
+                </nav>
+            )}
         </>
-        )
+    )
 }
 
 export default Navbar;

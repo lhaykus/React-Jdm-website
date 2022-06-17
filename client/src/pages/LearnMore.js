@@ -1,6 +1,7 @@
 import { Container, Box } from '@material-ui/core';
 import React from 'react';
 import drifting from '../assets/images/drift-cars.gif';
+import Newsletter from '../components/Newsletter';
 import './LearnMore.css';
 
 
@@ -10,16 +11,17 @@ const LearnMore = () => {
       <h1 align-text='center'>Who Are We</h1>
       <p align-text='center'>description about website and services and have pic/gif</p>
 
-      <div>
+      <Box>
       
         <h1 align-text='center'>JDM Culture</h1>
         <img className='learnmore-img' src={drifting} ></img>
         <p align-text='center'>Description of jdm culture, drifting, cars etc. gifs/pics</p>
 
-      </div>
+      </Box>
 
-
+      <Newsletter />
     </Container>
+  
 
   )
 }
