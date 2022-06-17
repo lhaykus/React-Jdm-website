@@ -3,8 +3,8 @@ const { verifyToken, verifyTokenAndAuth, verifyTokenAndAdmin } = require('./veri
 const Cart = require('../models/Cart');
 
 //POST request
-//CREAT
-router.post('/', verifyTokenAndAdmin, async (req, res) => {
+//CREATE
+router.post('/', async (req, res) => {
     const newCart = new Cart(req.body);
 
     try {
