@@ -13,7 +13,12 @@ const Products = ({category, filters, sort}) => {
   useEffect(() => {
     const getProducts = async () => {
       try {
-        const res = await axios.get("http://localhost:2100/api/products");
+        const res = await axios.get(
+          //if item has a category go to category page otherwise show all products
+          category ? `http://localhost:2100/api/products?category=${category}` :
+          "http://localhost:2100/api/products"
+          );
+          setProducts(res.data);
         console.log(res);
  
         

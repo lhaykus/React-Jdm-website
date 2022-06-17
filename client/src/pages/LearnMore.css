@@ -1,0 +1,15 @@
+video {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: -1;
+}
+
+.learnmore-img {
+    background:url(../assets/images/drift-cars.gif) center center/cover no-repeat; 
+    z-index: -1;
+    object-fit: cover;
+    width: 100%;
+    height: 36vh;
+}

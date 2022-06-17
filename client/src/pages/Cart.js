@@ -3,6 +3,9 @@ import './Cart.css';
 import { Container, Button, Box } from '@material-ui/core';
 import { Link } from 'react-router-dom';
 import gears from '../assets/images/gears.jpg';
+import StripeCheckout from 'react-stripe-checkout';
+
+
 
 const Cart = () => {
   return (
@@ -27,6 +30,19 @@ const Cart = () => {
 
             </div>
           </div>
+      {/*}   <StripeCheckout
+              name="Jdm Website"
+              iamge="https://visracing.com/images/M198738582"
+              billingAddress
+              shippingAddress
+              description={`Your total is ${cart.total}`}
+              price = {cart.total * 100}
+              token= {onToken}
+              stripeKey={KEY}
+          >
+            <Button>Checkout</Button>
+          </StripeCheckout>
+  {*/}
         </Box>
 
 
