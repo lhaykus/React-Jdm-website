@@ -9,6 +9,8 @@ const Product = ({ item }) => {
         <div className='product-container'>
             <div className='product-info'>
                 <img src={item.img} className='product-img' />
+                <p>{item.description}</p>
+                <p>{item.price}</p>
                 <div className='basket-icon'>
                     <ShoppingBasketOutlined />
                 </div>

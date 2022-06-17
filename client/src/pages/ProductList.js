@@ -19,8 +19,10 @@ const Option = styled.option``;
 
 
 const ProductList = () => {
+    //returns the location object to find url of categories
     const location = useLocation();
-    const category = location.pathname.split('/')[2];
+    //console.log(location);
+    const category = location.pathname.split("/")[2];
     const [filters, setFilters] = useState({});
   
     const handleFilters = (e) => {
@@ -31,6 +33,7 @@ const ProductList = () => {
         });
     };
 
+
     return (
         <section>
             <div className='performance-hero-image'></div>
@@ -39,7 +42,7 @@ const ProductList = () => {
                 <div className='select-filter'>
                     <div className='filter-text'>Filter Products:</div>
                     <Filter className='filter'>
-                    <Select className='select' onChange={handleFilters}>
+                    <Select name='category' onChange={handleFilters}>
                         <Option>Performance</Option>
                         <Option>Accessories</Option>
                         <Option>Merch</Option>
@@ -47,11 +50,6 @@ const ProductList = () => {
                     </Filter>
                 </div>
             </Container>
-            <div className='filter-container'>
-                <div className='sort-filter'>
-                    <div className='filter-text'>Sort Products:</div>
-                </div>
-            </div>
             <Products category={category} filters={filters} />
 
 
