@@ -24,7 +24,7 @@ router.put('/:id', verifyTokenAndAuth, async (req, res) => {
     try {
         const updatedOrder = await Order.findByIdAndUpdate(req.params.id, {
             //take everything in req.body and set again
-            $set: req.body
+            $set: req.body,
         }, { new: true });
         //update order with new data
         res.status(200).json(updatedOrder);
@@ -38,9 +38,9 @@ router.put('/:id', verifyTokenAndAuth, async (req, res) => {
 });
 
 //Delete request
-router.delete('/:id', verifyTokenAndAuth, async (req, res) => {
+router.delete('/:id',  async (req, res) => {
     try {
-        await Order.findByIdAndDelete(req.params.id)
+        await Order.findByIdAndDelete(req.params._id)
         res.status(200).json('Order had been deleted')
         
     } catch (error) {
@@ -61,7 +61,7 @@ router.get('/find/:id', async (req, res) => {
 
 
 //GET all 
-router.get('/', verifyTokenAndAdmin, async (req, res) => {
+router.get('/', async (req, res) => {
     
     try {
         const orders = await Order.find();
