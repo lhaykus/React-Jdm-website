@@ -56,20 +56,8 @@ const IndividualProduct = () => {
         <div className='info-container'>
           <h1>{product.name}</h1>
           <p className='description-container'>
-            jsfgjls;ldkfgjlksdfgjlk;sdglksdfj;ldksfjsfgjls;ldkfg
-            jlksdfgjlk;sdglksdfj;ldks
-            jsfgjls;ldkfgjlksdfgjlk;sdglksdfj;ldksf
-            jsfgjls;ldkfgjlksdfgjlk;sdglksdfj;ldksf f jsfgjls;ldkfgjlksdfgjlk;sdglksdfj;ldksfjsfgjls;ldkfg
-            jlksdfgjlk;sdglksdfj;ldks
-            jsfgjls;ldkfgjlksdfgjlk;sdglksdfj;ldksf
-            jsfgjls;ldkfgjlksdfgjlk;sdglksdfj;ldksf f jsfgjls;ldkfgjlksdfgjlk;sdglksdfj;ldksfjsfgjls;ldkfg
-            jlksdfgjlk;sdglksdfj;ldks
-            jsfgjls;ldkfgjlksdfgjlk;sdglksdfj;ldksf
-            jsfgjls;ldkfgjlksdfgjlk;sdglksdfj;ldksf f jsfgjls;ldkfgjlksdfgjlk;sdglksdfj;ldksfjsfgjls;ldkfg
-            jlksdfgjlk;sdglksdfj;ldks
-            jsfgjls;ldkfgjlksdfgjlk;sdglksdfj;ldksf
-            jsfgjls;ldkfgjlksdfgjlk;sdglksdfj;ldksf f  </p>
-          <p>$280</p>
+           {product.description} </p>
+          <p>${product.price}</p>
           
             <div className='cart-wrapper'>
               <Remove />

@@ -1,5 +1,5 @@
 import React, { useState }  from 'react';
-import Products from './Products';
+import Products from '../components/Products';
 import './ProductList.css';
 import styled from "styled-components";
 import { Container } from '@material-ui/core';
