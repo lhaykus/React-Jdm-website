@@ -23,15 +23,7 @@ const ProductList = () => {
     const location = useLocation();
     //console.log(location);
     const category = location.pathname.split("/")[2];
-    const [filters, setFilters] = useState({});
-  
-    const handleFilters = (e) => {
-        const value = e.target.value;
-        setFilters({
-            ...filters,
-            [e.target.name]: value,
-        });
-    };
+
 
 
     return (
@@ -42,7 +34,7 @@ const ProductList = () => {
                 <div className='select-filter'>
                     <div className='filter-text'>Filter Products:</div>
                     <Filter className='filter'>
-                    <Select name='category' onChange={handleFilters}>
+                    <Select name='category'>
                         <Option>Performance</Option>
                         <Option>Accessories</Option>
                         <Option>Merch</Option>
@@ -50,7 +42,7 @@ const ProductList = () => {
                     </Filter>
                 </div>
             </Container>
-            <Products category={category} filters={filters} />
+            <Products category={category} />
 
 
         </section>

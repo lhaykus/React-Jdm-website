@@ -2,7 +2,7 @@
   "name": "jdm-website-api",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "start": "nodemon server.js"
   },
@@ -16,8 +16,9 @@
   "bugs": {
     "url": "https://github.com/lhaykus/jdm-website-api/issues"
   },
-  "homepage": "https://github.com/lhaykus/jdm-website-api#readme",
+  "homepage": "https://github.com/lhaykus/jdm-website-api/",
   "dependencies": {
+    "cors": "^2.8.5",
     "crypto-js": "^4.1.1",
     "dotenv": "^16.0.1",
     "express": "^4.18.1",

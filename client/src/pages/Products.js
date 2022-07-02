@@ -2,7 +2,7 @@ import React from 'react';
 import { useEffect, useState } from 'react';
 import './Products.css';
 import { popularProducts } from '../data';
-import Product from './Product';
+import Product from '../components/Product';
 import axios from 'axios';
 
 
@@ -15,8 +15,8 @@ const Products = ({category, filters, sort}) => {
       try {
         const res = await axios.get(
           //if item has a category go to category page otherwise show all products
-          category ? `http://localhost:2100/api/products?category=${category}` :
-          "http://localhost:2100/api/products"
+          category ? `https://localhost:2100/api/products?category=${category}` :
+          "https://localhost:2100/api/products"
           );
           setProducts(res.data);
         console.log(res);

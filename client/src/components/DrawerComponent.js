@@ -11,7 +11,7 @@ import { ShoppingBasketOutlined} from '@material-ui/icons';
 
 const useStyles = makeStyles(theme => ({
     menuIcon: {
-        marginLeft: 'auto'
+        marginLeft: 'auto',
     },
     paper: {
         background: 'black'
@@ -30,19 +30,19 @@ const DrawerComponent = () => {
                 anchor='left' onClose={() => setOpenDrawer(false)}
                 open={openDrawer}
             >
-                <List component='nav'>
+                <List component='nav'  style={{ alignContent: 'center', padding: '5px'}}>
                     <ListItem divider button >
                         <ListItemText inset>
-                            <Typography>
-                                <Link to='/' style={{ color: '#D231EB', fontSize: '30px' }}>
+                            <Typography >
+                                <Link to='/' style={{ color: '#D231EB', fontSize: '30px', textDecoration: 'none' }}>
                                     Home</Link>
                             </Typography>
                         </ListItemText>
                     </ListItem>
-                    <ListItem divider button style={{ backgroundColor: 'black', color: '#D231EB' }} >
+                    <ListItem divider button >
                         <ListItemText inset >
-                            <Typography variant='title'>
-                                <Link to='/products/:category' style={{ color: '#D231EB', fontSize: '30px' }}>
+                            <Typography>
+                                <Link to='/products' style={{ color: '#D231EB', fontSize: '30px', textDecoration: 'none'  }}>
                                     Shop
                                 </Link>
                             </Typography>
@@ -51,7 +51,7 @@ const DrawerComponent = () => {
                     <ListItem divider button >
                         <ListItemText inset>
                             <Typography>
-                                <Link to='/learnmore' style={{ color: '#D231EB', fontSize: '30px' }}>
+                                <Link to='/learnmore' style={{ color: '#D231EB', fontSize: '30px', textDecoration: 'none'  }}>
                                     Learn More
                                 </Link>
                             </Typography>
@@ -60,7 +60,7 @@ const DrawerComponent = () => {
                     <ListItem divider button >
                         <ListItemText inset>
                             <Typography>
-                                <Link to='/login' style={{ color: '#D231EB', fontSize: '30px' }}>
+                                <Link to='/login' style={{ color: '#D231EB', fontSize: '30px', textDecoration: 'none'  }}>
                                     Login
                                 </Link>
                             </Typography>
