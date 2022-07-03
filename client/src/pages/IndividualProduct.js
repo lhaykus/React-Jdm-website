@@ -1,13 +1,11 @@
 import { Button } from '@material-ui/core';
 import { Add, Remove } from '@material-ui/icons';
 import React from 'react';
-import rotor from '../assets/images/rotor.jpg';
 import './IndividualProduct.css';
 import { useLocation } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { useDispatch } from 'react-redux';
-import axios from 'axios';
-//import { addProduct } from '../redux/cartRedux';
+import { addProduct } from '../redux/cartRedux';
 import { publicRequest } from '../requestMethods';
 
 
@@ -33,7 +31,6 @@ const IndividualProduct = () => {
   //If the quantity is greater than one, then quantity can be decreased 
   //else quantity is increased by 1
   const handleQuantity = (type) => {
-
       if(type === 'dec') {
           quantity > 1 && setQuantity(quantity - 1);
       }else {
@@ -42,11 +39,11 @@ const IndividualProduct = () => {
   };
 
   //adding product to cart
- // const handleClick = () => {
-   //   dispatch(
-    //      addProduct({ ...product, quantity})
-    //  );
- // };
+  const handleClick = () => {
+      dispatch(
+          addProduct({ ...product, quantity})
+      );
+  };
 
 
   return (
@@ -59,11 +56,13 @@ const IndividualProduct = () => {
            {product.description} </p>
           <p>${product.price}</p>
           
+          
             <div className='cart-wrapper'>
-              <Remove />
-              <div className='add-amount'>1</div>
-              <Add />
-              <Button className='add-to-cart-btn' variant='contained' color='primary'>Add to Cart</Button>
+              <Remove onClick={() => handleQuantity('dec')} />
+              <div>{quantity}</div>
+              <Add onClick={() => handleQuantity('inc')}/>
+              <Button onClick={handleClick} className='add-to-cart-btn' 
+              variant='contained' color='primary'>Add to Cart</Button>
             </div>
         
         </div>

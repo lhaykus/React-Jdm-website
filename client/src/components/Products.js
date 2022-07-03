@@ -7,7 +7,7 @@ import axios from 'axios';
 import { Container } from '@material-ui/core';
 
 
-const Products = ({category, filters, sort}) => {
+const Products = ({category, filters}) => {
   const [products, setProducts] = useState([]);
   const [filterProducts, setFilterProducts] = useState([]);
 

@@ -62,7 +62,7 @@ const Navbar = () => {
                                 </div>
                             </Link>
                             <Link to='/cart'>
-                                <Badge badgeContent={4} className='shopping-basket'>
+                                <Badge badgeContent={0} className='shopping-basket'>
                                     <ShoppingBasketOutlined />
                                 </Badge>
                             </Link>

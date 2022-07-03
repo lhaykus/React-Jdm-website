@@ -2,6 +2,8 @@ import { ShoppingBasketOutlined, Favorite } from '@material-ui/icons';
 import React from 'react';
 import './Product.css';
 import { Link } from 'react-router-dom';
+import { useDispatch } from 'react-redux';
+import { addProduct } from '../redux/cartRedux';
 
 
 const Product = ({ item }) => {
