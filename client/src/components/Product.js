@@ -9,21 +9,24 @@ const Product = ({ item }) => {
     return (
         <div className='product-container'>
             <div className='product-info'>
-            <Link to={`/product/${item._id}`}>
-                <img src={item.img} className='product-img' />
+                <Link to={`/product/${item._id}`}>
+                    <h2 style={{color:'black'}}> {item.name} </h2>
+                    <br/>
+                    <img src={item.img} className='product-img' />
+
                 </Link>
 
-                <div className='basket-icon'>
+                <div className='icon'>
                     <ShoppingBasketOutlined />
                 </div>
-                <div className='favorite-icon'>
+                <div className='icon'>
                     <Favorite />
                 </div>
             </div>
 
 
         </div>
-        
+
     )
 }
 

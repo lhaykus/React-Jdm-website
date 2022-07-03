@@ -9,14 +9,14 @@ import { Container } from '@material-ui/core';
 
 const Products = ({category, filters, sort}) => {
   const [products, setProducts] = useState([]);
-  const [filterProducts, setFilteredProducts] = useState([]);
+  const [filterProducts, setFilterProducts] = useState([]);
 
   useEffect(() => {
     const getProducts = async () => {
       try {
         const res = await axios.get(
           //if item has a category go to category page otherwise show all products
-         // category ? `https://localhost:2100/api/products?category=${category}` :
+          category ? `https://localhost:2100/api/products?category=${category}` :
           "http://localhost:2100/api/products"
           );
           setProducts(res.data);
@@ -32,7 +32,7 @@ const Products = ({category, filters, sort}) => {
 
   useEffect(() => {
     category &&
-      setFilteredProducts(
+      setFilterProducts(
         products.filter((item) =>
           Object.entries(filters).every(([key, value]) =>
             item[key].includes(value)
@@ -49,8 +49,10 @@ const Products = ({category, filters, sort}) => {
 
 
   return (
-    <Container>
-    { products.map((item) => <Product item={item} key={item.id} />)}
+    <Container className='products-container'>
+    {category
+        ? filterProducts.map((item) => <Product item={item} key={item.id} />)
+     : products.map((item) => <Product item={item} key={item.id} />)}
   </Container>
 
 )}

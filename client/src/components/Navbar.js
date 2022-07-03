@@ -49,9 +49,6 @@ const Navbar = () => {
                                     <Link to='/products' className='nav-links' onClick={closedMobileMenu}>Shop</Link>
                                 </ListItem>
                                 <ListItem className='nav-item'>
-                                    <Link to='/product/:id' className='nav-links' onClick={closedMobileMenu}>Individual Product</Link>
-                                </ListItem>
-                                <ListItem className='nav-item'>
                                     <Link to='/learnmore' className='nav-links' onClick={closedMobileMenu}>Learn More</Link>
                                 </ListItem>
                             </List>
