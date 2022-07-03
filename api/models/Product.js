@@ -13,6 +13,12 @@ const productSchema = new Schema({
     description: {
         type: String, 
     },
+    features: {
+        type: String, 
+    },
+    weight: {
+        type: Number, 
+    },
     price: {
         type: Number, 
         required: true,

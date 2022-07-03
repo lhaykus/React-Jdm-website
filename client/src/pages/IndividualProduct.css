@@ -1,6 +1,7 @@
 .ind-product {
     padding: 50px;
 
+
 }
 
 .img-container {
@@ -29,14 +30,25 @@ h1 {
     margin: 20px;
 }
 
-p {
-    font-size: 300%;
-    padding: 50px;
-}
+
+
 
 .description-container {
-    margin: 20px 0px;
-    font-size: 30px;
+    font-size: 200%;
+    padding: 20px;
+}
+
+.features {
+    font-size: 100%;
+    padding: 15px;
+
+}
+
+#product-price {
+    display: flex;
+    justify-content: left;
+    font-weight: bolder;
+
 }
 
 .add-to-cart-btn {

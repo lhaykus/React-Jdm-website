@@ -1,6 +1,7 @@
 import { Button } from '@material-ui/core';
 import { Add, Remove } from '@material-ui/icons';
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './IndividualProduct.css';
 import { useLocation } from "react-router-dom";
 import { useEffect, useState } from "react";
@@ -22,7 +23,7 @@ const IndividualProduct = () => {
       try {
         const res = await publicRequest.get("/products/find/" + id);
         setProduct(res.data);
-      } catch {}
+      } catch { }
     };
     getProduct();
   }, [id]);
@@ -31,40 +32,46 @@ const IndividualProduct = () => {
   //If the quantity is greater than one, then quantity can be decreased 
   //else quantity is increased by 1
   const handleQuantity = (type) => {
-      if(type === 'dec') {
-          quantity > 1 && setQuantity(quantity - 1);
-      }else {
-          setQuantity(quantity + 1);
-      };
+    if (type === 'dec') {
+      quantity > 1 && setQuantity(quantity - 1);
+    } else {
+      setQuantity(quantity + 1);
+    };
   };
 
   //adding product to cart
   const handleClick = () => {
-      dispatch(
-          addProduct({ ...product, quantity})
-      );
+
+    dispatch(
+      addProduct({ ...product, quantity })
+    );
   };
 
 
   return (
     <section className='ind-product'>
+       <Link to='/products'>
+          <Button id='cart-btns' variant='outlined'>Continue Shopping</Button>
+        </Link>
       <div className='img-container'>
         <img className='indiv-img' src={product.img} />
         <div className='info-container'>
           <h1>{product.name}</h1>
           <p className='description-container'>
-           {product.description} </p>
-          <p>${product.price}</p>
-          
-          
-            <div className='cart-wrapper'>
-              <Remove onClick={() => handleQuantity('dec')} />
-              <div>{quantity}</div>
-              <Add onClick={() => handleQuantity('inc')}/>
-              <Button onClick={handleClick} className='add-to-cart-btn' 
+            {product.description} </p>
+            <p className='features'>Features: {product.features}</p>
+            <p className='features'>Weight: {product.weight} lbs</p>
+            <p id='product-price'>${product.price}</p>
+
+
+          <div className='cart-wrapper'>
+            <Remove onClick={() => handleQuantity('dec')} />
+            <div>{quantity}</div>
+            <Add onClick={() => handleQuantity('inc')} />
+            <Button onClick={handleClick} className='add-to-cart-btn'
               variant='contained' color='primary'>Add to Cart</Button>
-            </div>
-        
+          </div>
+
         </div>
       </div>
     </section>

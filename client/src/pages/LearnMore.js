@@ -1,6 +1,7 @@
 import { Container, Box } from '@material-ui/core';
 import React from 'react';
 import drifting from '../assets/images/drift-cars.gif';
+import jdmcrew from '../assets/images/jdmcrew.jpg';
 import Newsletter from '../components/Newsletter';
 import './LearnMore.css';
 
@@ -15,7 +16,7 @@ const LearnMore = () => {
       <Box>
       
         <h1 align-text='center'>JDM Culture</h1>
-        <img className='learnmore-img' src={drifting} ></img>
+        <img className='learnmore-img' src={jdmcrew} ></img>
         <p>JDM, also known as Japanese Domestic Market, refers to vehicles prodcued in Japan. However the culture of JDM is
         another world full of tuning and modificatons to cars. </p>
 
