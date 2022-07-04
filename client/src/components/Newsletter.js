@@ -7,7 +7,7 @@ const Newsletter = () => {
     return (
         <section className='newsletter-container'>
             <div>
-                <div className='newsletter-title'>Sign up for our newsletter!</div>
+                <div className='newsletter-title'>Become apart of the JDM family</div>
                 <div className='newsletter-description'>Get the latest updates from us!</div>
                 <Grid container
                     direction="row"

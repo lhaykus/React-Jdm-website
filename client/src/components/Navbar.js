@@ -36,7 +36,8 @@ const Navbar = () => {
                 <nav className='navbar'>
                     <section className='navbar-container'>
                         <div className='navbar-container'>
-                            <Link to='/' className='navbar-logo'>JDM
+                            <Link to='/' className='navbar-logo'>
+                                <h4>Twins Turbo</h4>
                             </Link>
                             <div className='menu-icon' onClick={handleClick}>
                                 <i className={click ? 'fas fa-times' : 'fas fa-bars'} />

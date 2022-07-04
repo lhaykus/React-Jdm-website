@@ -16,11 +16,6 @@ import { useDispatch } from 'react-redux';
 //publishiable key for stripe
 const KEY = process.env.PUB_STRIPE_KEY ;
 
-
-
-
-
-
 const Cart = () => {
 
   //function to use token from stripe
@@ -86,7 +81,10 @@ const Cart = () => {
             {cart.products.map((product) => (
               <section id = 'product-info'>
                 <div id='product-detail'>
-                  <img src={product.img} />
+                <Link to={`/product/${product._id}`}>
+                <img src={product.img} />
+                </Link>
+                
                   <div id='products-info' >
                     <h2> {product.name}</h2>
                     <div>
