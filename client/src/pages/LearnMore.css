@@ -7,7 +7,6 @@ video {
 }
 
 .learnmore-img {
-    background:url(../assets/images/drift-cars.gif) center center/cover no-repeat; 
     z-index: -1;
     object-fit: cover;
     width: 100%;

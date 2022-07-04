@@ -1,6 +1,5 @@
 import { Container, Box } from '@material-ui/core';
 import React from 'react';
-import drifting from '../assets/images/drift-cars.gif';
 import jdmcrew from '../assets/images/jdmcrew.jpg';
 import Newsletter from '../components/Newsletter';
 import './LearnMore.css';

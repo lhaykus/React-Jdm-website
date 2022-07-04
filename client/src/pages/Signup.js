@@ -13,7 +13,7 @@ const Signup = () => {
         <br />
         <TextField id='signup-input' label='email' variant='outlined' />
         <br />
-        <TextField id='signup-input' label='password' variant='outlined' />
+        <TextField id='signup-input' label='password' variant='outlined' type='password' />
         <br />
         <Button className='signup-btn' variant='contained' color='primary'>Create Account</Button>
        </Box>

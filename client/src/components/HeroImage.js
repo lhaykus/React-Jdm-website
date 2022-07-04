@@ -9,7 +9,6 @@ import { Button, Box } from '@material-ui/core';
 function HeroImage() {
   return (
     <Box className='hero-image-container'>
-    
         <h1>The world of JDM Legends</h1>
         <Link to ='/login' className='hero-btn-link'>
         <div className='hero-btn'>

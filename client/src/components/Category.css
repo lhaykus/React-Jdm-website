@@ -1,6 +1,6 @@
 .category-container {
     display: flex;
-    padding: 30px;
+    padding: 20px;
     margin: 20px;
     justify-content:space-evenly;
 }
