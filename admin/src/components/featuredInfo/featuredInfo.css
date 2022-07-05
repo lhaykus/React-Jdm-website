@@ -28,3 +28,14 @@
       font-size: 30px;
       font-weight: 600;
   }
+
+  .featured-icon{
+    font-size: 14px;
+    margin-left: 5px;
+    color: green;
+}
+
+.featured-icon.negative{
+    color: red;
+}
+
