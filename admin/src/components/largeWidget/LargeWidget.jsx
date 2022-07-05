@@ -3,7 +3,9 @@ import './largeWidget.css';
 
 const LargeWidget = () => {
   return (
-    <div>LargeWidget</div>
+    <div className='large-widget'>
+      large
+      </div>
   )
 }
 
