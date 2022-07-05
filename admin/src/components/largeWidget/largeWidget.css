@@ -12,7 +12,7 @@
   
   .large-widget-table{
     width: 100%;
-    border-spacing: 20px;
+    border-spacing: 30px;
   }
   
   .large-table-header{
@@ -36,7 +36,7 @@
     border-radius: 10px;
   }
 
-  
+/*changing the color of button depending on status */
 .status-btn.approved{
     background-color: #e5faf2;
     color: #3bb077;
