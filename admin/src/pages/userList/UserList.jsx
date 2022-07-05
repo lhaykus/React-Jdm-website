@@ -49,7 +49,7 @@ const UserList = () => {
         {
             field: "action",
             headerName: "Action",
-            width: 150,
+            width: 200,
             renderCell: (params) => {
               return (
                 <>
@@ -57,7 +57,7 @@ const UserList = () => {
                     <button className="userListEdit">Edit</button>
                   </Link>
                   <DeleteOutline
-                    className="userListDelete"
+                    className="userlist-delete"
                     onClick={() => handleDelete(params.row.id)}
                   />
                 </>

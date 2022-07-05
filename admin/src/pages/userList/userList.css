@@ -1,4 +1,4 @@
-.user-list{
+.user-list {
     flex: 4;
 }
 
@@ -13,4 +13,10 @@
     border-radius: 50%;
     object-fit: cover;
     margin-right: 10px;
+}
+
+.userlist-delete {
+    margin: 20px;
+    color: red;
+    cursor: pointer;
 }
