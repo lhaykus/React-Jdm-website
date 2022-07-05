@@ -53,3 +53,68 @@ export const userData = [
 
       },
   ];
+
+
+ export const userRows = [
+    {
+        id: 1,
+        username: 'Jon Snow',
+        avatar: 'https://images.pexels.com/photos/1571882/pexels-photo-1571882.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+        email: 'jonsnow@gmail.com',
+        status: 'active',
+        transaction: '120'
+    },
+    {
+        id: 2,
+        username: 'Jon Snow',
+        avatar: 'https://images.pexels.com/photos/1571882/pexels-photo-1571882.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+        email: 'jonsnow@gmail.com',
+        status: 'active',
+        transaction: '120'
+    },
+    {
+        id: 3,
+        username: 'Jon Snow',
+        avatar: 'https://images.pexels.com/photos/1571882/pexels-photo-1571882.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+        email: 'jonsnow@gmail.com',
+        status: 'active',
+        transaction: '120'
+    },
+    {
+      id: 4,
+      username: 'Jon Snow',
+      avatar: 'https://images.pexels.com/photos/1571882/pexels-photo-1571882.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+      email: 'jonsnow@gmail.com',
+      status: 'active',
+      transaction: '120'
+  },
+  {
+    id: 1,
+    username: 'Jon Snow',
+    avatar: 'https://images.pexels.com/photos/1571882/pexels-photo-1571882.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+    email: 'jonsnow@gmail.com',
+    status: 'active',
+    transaction: '120'
+},
+
+
+
+];
+
+
+export const productData = [
+  {
+    name: "Jan",
+    "Sales": 4000,
+  },
+  {
+    name: "Feb",
+    "Sales": 3000,
+  },
+  {
+    name: "Mar",
+    "Sales": 5000,
+  },
+];
+
+
