@@ -3,9 +3,7 @@ import './App.css';
 import Sidebar from './components/sidebar/Sidebar';
 import Topbar from './components/topbar/Topbar';
 import Home from './pages/home/Home';
-import {
-  HashRouter as Router, Routes, Route, Redirect,
-} from "react-router-dom";
+import {HashRouter as Router, Routes, Route, Redirect,} from "react-router-dom";
 import UserList from './pages/userList/UserList';
 
 
@@ -19,7 +17,7 @@ const App = () => {
           <Sidebar />
           <Routes>
             <Route exact path='/' element ={<Home />}/>
-            <Route exact path='/users' element ={<UserList />}/>
+            <Route exact path="/users" element = {<UserList />}/>
           </Routes>
         </div>
       </Router>
