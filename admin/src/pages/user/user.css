@@ -30,14 +30,6 @@
     box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 0.75);
 }
 
-.update-user {
-    flex: 2;
-    padding: 20px;
-    -webkit-box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 0.75);
-    box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 0.75);
-    margin-left: 20px;
-}
-
 .top {
     display: flex;
     align-items: center;
@@ -71,8 +63,9 @@
 
 .user-icon {
     margin-right: 20px;
-    font-size: 18px !important; 
+    font-size: 18px !important;
 }
+
 
 .bottom-show-user-title {
     display: flex;
@@ -80,4 +73,79 @@
     margin: 20px;
     font-weight: 300;
 }
-    
+
+.update-user {
+    flex: 2;
+    padding: 20px;
+    -webkit-box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 0.75);
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+
+.update-user-title {
+    font-size: 24px;
+    font-weight: 600;
+
+}
+
+.update-user-form {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.update-user-item {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+.update-user-item>label {
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+.update-user-input {
+    border: none;
+    width: 250px;
+    height: 30px;
+    border-bottom: 1px solid gray;
+}
+
+.update-user-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.update-user-upload {
+    display: flex;
+    align-items: center;
+}
+
+.update-user-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    object-fit: cover;
+    margin: 20px;
+    margin-right: 20px;
+}
+
+.update-user-icon {
+    cursor: pointer;
+}
+
+.update-btn {
+    border-radius: 5px;
+    border: none;
+    margin: 20px;
+    padding: 5px;
+    cursor: pointer;
+    background-color: rgb(14, 214, 228);
+    color: white;
+    font-weight: 600;
+}
