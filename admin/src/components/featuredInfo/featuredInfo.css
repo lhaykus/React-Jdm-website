@@ -41,15 +41,24 @@
 
 
 @media screen and (max-width: 1200px) {
-    .featured{
-        justify-content:flex-start;
-        margin-top: 2rem;
+    .featured {
+      top: 2rem;
+      height: 20%;
+      left: 25px;
+      width: 20%;
     }
-}
-
-@media screen and (max-width: 768px)
-{
-    .featured{
-        align-items: center;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .featured {
+      top: 8rem;
+      height: 20%;
+      left: 25px;
+      width: 20%;
+      margin-bottom: 200px;
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      align-items: center;
     }
-}
+  }
