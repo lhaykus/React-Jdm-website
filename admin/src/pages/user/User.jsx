@@ -1,10 +1,12 @@
 import { Cake, Call, MailOutline, People, Map, Publish } from '@material-ui/icons';
 import React from 'react';
+import Topbar from '../../components/topbar/Topbar';
 import './user.css';
 
 const User = () => {
     return (
         <div className="user">
+            <Topbar />
             <div className="user-title-container">
                 <h1 className="user-title">Edit User</h1>
                 <button className='add-user-btn'>Create</button>

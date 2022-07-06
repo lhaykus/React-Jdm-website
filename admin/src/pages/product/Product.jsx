@@ -4,10 +4,12 @@ import { Link } from 'react-router-dom';
 import Chart from "../../components/chart/Chart"
 import { productData } from '../../dummyData';
 import { Publish } from '@material-ui/icons';
+import Topbar from '../../components/topbar/Topbar';
 
 const Product = () => {
     return (
         <div className='product'>
+            <Topbar />
             <div className='product-title-container'>
                 <h1>Product</h1>
                 <Link to='/newProduct'>

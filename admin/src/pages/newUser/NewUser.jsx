@@ -1,9 +1,11 @@
 import React from 'react';
+import Topbar from '../../components/topbar/Topbar';
 import './newUser.css';
 
 const NewUser = () => {
     return (
         <div className='new-user'>
+            <Topbar />
             <h1 className='new-user-title'>New User</h1>
             <form className='new-user-form'>
                 <div className='new-user-item'>

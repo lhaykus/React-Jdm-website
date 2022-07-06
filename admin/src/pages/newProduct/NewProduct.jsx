@@ -1,9 +1,11 @@
 import React from 'react';
+import Topbar from '../../components/topbar/Topbar';
 import './newProduct.css';
 
 const NewProduct = () => {
     return (
         <div className='new-product'>
+            <Topbar />
             <h1 className='new-product-title'>New product</h1>
             <form className='add-product-form'>
                 <div className='add-product-item'>

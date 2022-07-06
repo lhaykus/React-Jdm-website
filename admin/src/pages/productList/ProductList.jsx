@@ -5,6 +5,7 @@ import { DeleteOutline } from "@material-ui/icons";
 import { productRows } from "../../dummyData";
 import { Link } from "react-router-dom";
 import { useState } from 'react';
+import Topbar from '../../components/topbar/Topbar';
 
 const ProductList = () => {
 
@@ -72,6 +73,7 @@ const ProductList = () => {
 
     return (
         <div className='product-list'>
+            <Topbar />
             <DataGrid className='product-grid'
                 rows={data}
                 columns={columns}

@@ -1,3 +1,32 @@
-.admin-login {
+#login-container {
+    margin-bottom: 25%;
     flex: 4;
+}
+
+.login-btn .register-btn {
+    margin: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 10%;
+    cursor:crosshair;
+}
+
+
+
+.login-form {
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 40px;
+
+}
+
+#login-input {
+    flex: 1;
+    margin: 20px 10px 0px 0px;
+    padding: 10px;
 }
