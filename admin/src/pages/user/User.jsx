@@ -26,19 +26,23 @@ const User = () => {
                             <People className='user-icon' />
                             <span className='show-user-text'>lorynh</span>
                         </div>
+                        <br/>
                         <div className='show-user-info-container'>
                             <Cake className='user-icon' />
                             <span className='show-user-text'>10/21/1996</span>
                         </div>
+                        <br/>
                         <span className='bottom-show-user-title'>Contact Info</span>
                         <div className='show-user-info-container'>
                             <Call className='user-icon' />
                             <span className='show-user-text'>123 456 789</span>
                         </div>
+                        <br/>
                         <div className='show-user-info-container'>
                             <MailOutline className='user-icon' />
                             <span className='show-user-text'>lorynh@gmail.com</span>
                         </div>
+                        <br/>
                         <div className='show-user-info-container'>
                             <Map className='user-icon' />
                             <span className='show-user-text'>Colorado | USA</span>

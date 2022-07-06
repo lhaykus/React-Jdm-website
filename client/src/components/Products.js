@@ -41,13 +41,6 @@ const Products = ({category, filters}) => {
       );
   }, [products, category, filters]);
 
-
-
-
-
-
-
-
   return (
     <Container className='products-container'>
     {category

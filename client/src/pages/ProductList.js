@@ -5,14 +5,6 @@ import styled from "styled-components";
 import { Container } from '@material-ui/core';
 import { useLocation } from 'react-router-dom';
 
-
-const Filter = styled.div`
- 
-
-`;
-
-
-
 const ProductList = () => {
     //returns the location object to find url of categories
     const location = useLocation();
@@ -30,9 +22,6 @@ const ProductList = () => {
         });
     };
 
-    
-
-
     return (
         <section>
             <div className='performance-hero-image'></div>
@@ -40,13 +29,13 @@ const ProductList = () => {
             <Container className='filter-container'>
                 <div className='select-filter'>
                     <div className='filter-text'>Filter Products:</div>
-                    <Filter className='filter'>
+                    <div className='filter'>
                         <select name='cat' onChange={handleFilters}>
                             <option value='performance'>Performance</option>
                             <option value='accessories'>Accessories</option>
                             <option value='merch'>Merch</option>
                         </select>
-                    </Filter>
+                    </div>
                 </div>
             </Container>
             <Products cat={cat} filters={filters} sort={sort} />

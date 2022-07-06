@@ -7,6 +7,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin: 20px;
 }
 
 .add-user-btn {
@@ -17,12 +18,15 @@
     background-color: rgb(21, 228, 228);
     font-size: large;
     font-weight: bold;
+
 }
 
 .user-container {
     display: flex;
     margin: 20px;
 }
+
+/*CSS for showing user info on the left */
 
 .show-user {
     flex: 1;
@@ -57,6 +61,15 @@
     font-weight: 300;
 }
 
+.show-user-text {
+    margin: 20px;
+}
+
+
+.bottom {
+    padding: 20px;
+}
+
 
 .user-icon {
     margin-right: 20px;
@@ -70,6 +83,8 @@
     margin: 20px;
     font-weight: 300;
 }
+
+/*CSS for updating user */
 
 .update-user {
     flex: 2;
@@ -86,12 +101,14 @@
     font-size: 24px;
     font-weight: 600;
 
+  
+
 }
 
 .update-user-form {
     display: flex;
     justify-content: space-between;
-    margin-top: 20px;
+    margin: 20px;
 }
 
 .update-user-item {
@@ -146,3 +163,4 @@
     color: white;
     font-weight: 600;
 }
+

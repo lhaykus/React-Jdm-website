@@ -39,3 +39,17 @@
     color: red;
 }
 
+
+@media screen and (max-width: 1200px) {
+    .featured{
+        justify-content:flex-start;
+        margin-top: 2rem;
+    }
+}
+
+@media screen and (max-width: 768px)
+{
+    .featured{
+        align-items: center;
+    }
+}

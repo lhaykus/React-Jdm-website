@@ -16,7 +16,7 @@ import NewProduct from './pages/newProduct/NewProduct';
 const App = () => {
   return (
     <>
-      <Router>
+      <Router className='app'>
         <Topbar />
         <div className='container'>
           <Sidebar />
