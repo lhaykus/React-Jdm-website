@@ -92,7 +92,7 @@ export const userRows = [
     id: 1,
     username: 'Jon Snow',
     avatar: 'https://images.pexels.com/photos/1571882/pexels-photo-1571882.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-    email: 123,
+    email: "jonsnow@gmail.com",
     status: 'active',
     transaction: '120'
   },

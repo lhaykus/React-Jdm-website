@@ -21,6 +21,7 @@
 
 .user-container {
     display: flex;
+    margin: 20px;
 }
 
 .show-user {
@@ -54,10 +55,6 @@
 
 .show-user-jobtitle {
     font-weight: 300;
-}
-
-.show-user-info-container {
-    margin: 20px 0px;
 }
 
 
@@ -94,7 +91,7 @@
 .update-user-form {
     display: flex;
     justify-content: space-between;
-    margin-top: 50px;
+    margin-top: 20px;
 }
 
 .update-user-item {

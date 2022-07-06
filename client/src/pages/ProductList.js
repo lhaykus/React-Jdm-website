@@ -11,12 +11,6 @@ const Filter = styled.div`
 
 `;
 
-const Select = styled.select`
- 
-
-`;
-const Option = styled.option``;
-
 
 
 const ProductList = () => {
@@ -47,11 +41,11 @@ const ProductList = () => {
                 <div className='select-filter'>
                     <div className='filter-text'>Filter Products:</div>
                     <Filter className='filter'>
-                        <Select name='cat' onChange={handleFilters}>
-                            <Option value='performance'>Performance</Option>
-                            <Option value='accessories'>Accessories</Option>
-                            <Option value='merch'>Merch</Option>
-                        </Select>
+                        <select name='cat' onChange={handleFilters}>
+                            <option value='performance'>Performance</option>
+                            <option value='accessories'>Accessories</option>
+                            <option value='merch'>Merch</option>
+                        </select>
                     </Filter>
                 </div>
             </Container>

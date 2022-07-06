@@ -9,6 +9,7 @@ import User from './pages/user/User';
 import NewUser from './pages/newUser/NewUser';
 import ProductList from './pages/productList/ProductList';
 import Product from './pages/product/Product';
+import NewProduct from './pages/newProduct/NewProduct';
 
 
 
@@ -26,7 +27,7 @@ const App = () => {
             <Route exact path="/newUser" element = {<NewUser />}/>
             <Route exact path="/products" element = {<ProductList />}/>
             <Route exact path="/product/:productsId" element = {<Product />}/>
-            <Route exact path="/newProduct" element = {<NewUser />}/>
+            <Route exact path="/newProduct" element = {<NewProduct />}/>
           </Routes>
         </div>
       </Router>

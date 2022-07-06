@@ -21,7 +21,7 @@ const LargeWidget = () => {
             <img src='https://images.pexels.com/photos/1571882/pexels-photo-1571882.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
             alt=''
             className='large-widget-img' />
-            <span className='user-name'>Loryn Haykus Schwindt</span>
+            <span className='user-name'>Loryn Haykus</span>
           </td>
           <td className='large-widget-date'>7/4/2022</td>
           <td className='large-widget-amount'>$121</td>
@@ -35,7 +35,7 @@ const LargeWidget = () => {
             <img src='https://images.pexels.com/photos/1571882/pexels-photo-1571882.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
             alt=''
             className='large-widget-img' />
-            <span className='user-name'>Loryn Haykus Schwindt</span>
+            <span className='user-name'>Loryn Haykus</span>
           </td>
           <td className='large-widget-date'>7/4/2022</td>
           <td className='large-widget-amount'>$121</td>
@@ -49,7 +49,7 @@ const LargeWidget = () => {
             <img src='https://images.pexels.com/photos/1571882/pexels-photo-1571882.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
             alt=''
             className='large-widget-img' />
-            <span className='user-name'>Loryn Haykus Schwindt</span>
+            <span className='user-name'>Loryn Haykus</span>
           </td>
           <td className='large-widget-date'>7/4/2022</td>
           <td className='large-widget-amount'>$121</td>

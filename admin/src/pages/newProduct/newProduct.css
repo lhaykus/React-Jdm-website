@@ -1,13 +1,21 @@
-.new-user {
+.new-product {
     flex: 4;
 }
 
-.new-user-form {
-    display: flex;
-    flex-wrap: wrap;
+.new-product-title {
+    text-align: center;
 }
 
-.new-user-item {
+
+.add-product-form {
+    margin: 30px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.add-product-item {
     width: 400px;
     display: flex;
     flex-direction: column;
@@ -15,38 +23,31 @@
     margin-top: 20px;
 }
 
-.new-user-item label {
+.add-product-item label {
     margin-bottom: 10px;
     font-size: 15px;
     font-weight: 600;
 }
 
-.new-user-item input {
+.add-product-item input {
     height: 20px;
     padding: 10px;
     border: 1px solid gray;
     border-radius: 5px;
 }
 
-.user-gender input {
-    margin: 15px;
 
-}
-
-.user-gender label {
-    margin: 10px;
-}
-
-.new-user select {
+.add-product select {
     height: 40px;
     border-radius: 5px;
 }
 
-.new-user-btn {
+.add-product-btn {
     border-radius: 5px;
-    width: 60px;
+    width: 120px;
+    height: 50px;
     border: none;
-    margin: 20px;
+    margin: 30px;
     padding: 5px;
     cursor: pointer;
     background-color: rgb(16, 189, 202);
