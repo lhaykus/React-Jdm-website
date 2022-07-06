@@ -64,7 +64,7 @@
 }
 
 
-@media screen and (max-width: 768) {
+@media screen and (max-width: 1200px) {
   .large-widget-table {
     top: 2rem;
     height: 45vh;
@@ -74,9 +74,9 @@
 
 @media screen and (max-width: 768px) {
   .large-widget-table {
-    top: 8rem;
-    height: 50%;
-    left: 25px;
-    width: 80%;
+    margin-bottom: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 }

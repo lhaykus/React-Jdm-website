@@ -33,3 +33,36 @@
     color: white;
     font-weight: 600;
 }
+
+
+
+@media screen and (max-width: 1200px) {
+    .user-list-data-grid {
+        width: 50%;
+        height: 50%;
+        left: 6rem;
+
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .user-list-data-grid {
+        margin-bottom: 100px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 50%;
+        height: 50%;
+        left: 6rem;
+    }
+}
+
+
+@media screen and (max-width: 1200px) {
+    .user-list-data-grid  {
+        width: 50%;
+        height: 50%;
+        left: 6rem;
+
+    }
+}

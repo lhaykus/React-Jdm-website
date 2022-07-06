@@ -54,3 +54,24 @@
     color: white;
     font-weight: 600;
 }
+
+
+
+@media screen and (max-width: 1200px) {
+    .add-product-form {
+      width: 70%;
+      margin-top: 2rem;
+      margin-left: 20%;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .add-product-form{
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 20rem;
+      margin-left: 20%;
+    }
+  }

@@ -34,3 +34,29 @@
     color: white;
     font-weight: 600;
 }
+
+
+@media screen and (max-width: 768px) {
+    .product-grid {
+        margin-bottom: 100px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+        height: 50%;
+        left: 6rem;
+    }
+}
+
+
+@media screen and (max-width: 1200px) {
+    .product-grid  {
+        width: 50%;
+        height: 50%;
+        left: 6rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+}

@@ -72,7 +72,7 @@ const ProductList = () => {
 
     return (
         <div className='product-list'>
-            <DataGrid
+            <DataGrid className='product-grid'
                 rows={data}
                 columns={columns}
                 pageSize={10}
