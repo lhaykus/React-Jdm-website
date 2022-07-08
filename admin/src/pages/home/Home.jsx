@@ -13,7 +13,7 @@ import { userRequest } from '../../redux/requestMethods';
 import { RssFeed } from '@material-ui/icons';
 
 const Home = () => {
-  const [userstats, setUserStats] = useState([]);
+  const [userStats, setUserStats] = useState([]);
 
   const MONTHS = useMemo(
     () => [
@@ -54,14 +54,14 @@ const Home = () => {
   }, [MONTHS]);
   
 
-  console.log(userstats);
+  console.log(userStats);
 
 
   return (
     <div className='home'>
       <Topbar />
         <FeaturedInfo />
-        <Chart  data={userData}
+        <Chart  data={userStats}
         title="User Stats"
         grid
         dataKey="Active User" />
