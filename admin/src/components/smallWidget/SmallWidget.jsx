@@ -18,6 +18,7 @@ const SmallWidget = () => {
         };
         getUsers();
     })
+    
     return (
         <div className='small-widget'>
             <h3 className='small-widget-title'>New Members</h3>

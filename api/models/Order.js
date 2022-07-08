@@ -29,7 +29,13 @@ const orderSchema = new Schema({
         type: String,
         default: 'pending',
     },
-});
+
+
+},
+
+{ timestamps: true }
+
+);
 
 const Order = mongoose.model("Order", orderSchema);
 

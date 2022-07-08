@@ -1,7 +1,23 @@
 import React from 'react';
 import './largeWidget.css';
+import { useEffect } from 'react';
+import { useState } from 'react';
+import { userRequest } from '../../redux/requestMethods';
 
 const LargeWidget = () => {
+  const [orders, setOrders] = useState([]);
+
+  useEffect(() => {
+      const getOrders = async () => {
+          try {
+              const res = await userRequest.get('orders');
+              setOrders(res.data);
+
+          } catch (error) { }
+      };
+      getOrders();
+  });
+
   //creating button to show status of approved/rejected/pending for status
   const Button = ({ type }) => {
     return <button className={"status-btn " + type}>{type}</button>;
@@ -16,48 +32,19 @@ const LargeWidget = () => {
           <th className="large-table-header">Amount</th>
           <th className="large-table-header">Status</th>
         </tr>
+        {orders.map((order) => 
         <tr className="large-widget-tablerow">
           <td className='large-widget-user'>
-            <img src='https://images.pexels.com/photos/1571882/pexels-photo-1571882.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
-            alt=''
-            className='large-widget-img' />
-            <span className='user-name'>Loryn Haykus</span>
+          
+            <span className='user-name'>{order.userId}</span>
           </td>
-          <td className='large-widget-date'>7/4/2022</td>
-          <td className='large-widget-amount'>$121</td>
+          <td className='large-widget-date'>{order.updatedAt}</td>
+          <td className='large-widget-amount'>${order.price}</td>
           <td className='large-widget-status'>
-            <Button type='approved'></Button>
+            <Button type={order.status}></Button>
           </td>
-
         </tr>
-        <tr className="large-widget-tablerow">
-          <td className='large-widget-user'>
-            <img src='https://images.pexels.com/photos/1571882/pexels-photo-1571882.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
-            alt=''
-            className='large-widget-img' />
-            <span className='user-name'>Loryn Haykus</span>
-          </td>
-          <td className='large-widget-date'>7/4/2022</td>
-          <td className='large-widget-amount'>$121</td>
-          <td className='large-widget-status'>
-            <Button type='declined'></Button>
-          </td>
-
-        </tr>
-        <tr className="large-widget-tablerow">
-          <td className='large-widget-user'>
-            <img src='https://images.pexels.com/photos/1571882/pexels-photo-1571882.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
-            alt=''
-            className='large-widget-img' />
-            <span className='user-name'>Loryn Haykus</span>
-          </td>
-          <td className='large-widget-date'>7/4/2022</td>
-          <td className='large-widget-amount'>$121</td>
-          <td className='large-widget-status'>
-            <Button type='pending'></Button>
-          </td>
-
-        </tr>
+  )}
         </table>
       </div>
 
