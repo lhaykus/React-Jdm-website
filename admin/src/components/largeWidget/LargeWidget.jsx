@@ -3,6 +3,7 @@ import './largeWidget.css';
 import { useEffect } from 'react';
 import { useState } from 'react';
 import { userRequest } from '../../redux/requestMethods';
+import {format} from 'timeago.js';
 
 const LargeWidget = () => {
   const [orders, setOrders] = useState([]);
@@ -38,7 +39,7 @@ const LargeWidget = () => {
           
             <span className='user-name'>{order.userId}</span>
           </td>
-          <td className='large-widget-date'>{order.updatedAt}</td>
+          <td className='large-widget-date'>{format(order.createdAt)}</td>
           <td className='large-widget-amount'>${order.price}</td>
           <td className='large-widget-status'>
             <Button type={order.status}></Button>
