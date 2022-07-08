@@ -11,31 +11,34 @@ import ProductList from './pages/productList/ProductList';
 import Product from './pages/product/Product';
 import NewProduct from './pages/newProduct/NewProduct';
 import Login from './pages/login/Login';
+import { useSelector } from 'react-redux';
 
 
 
 
 const App = () => {
+  const admin = JSON.parse(JSON.parse(localStorage.getItem('persist:root')).user).currentUser.isAdmin;
   return (
 
-<div className='container'>
+    <div className='container'>
 
-<Sidebar />
-<Routes>
-<Route path='/login' element={<Login />} />
-  <Route path='/' element={<Home />} />
+      <Sidebar />
+      <Routes>
+        <Route path='/login' element={<Login />} />
+        {admin && (
+          <>
+            <Route path='/' element={<Home />} />
+            <Route exact path="/users" element={<UserList />} />
+            <Route exact path="/user/:userId" element={<User />} />
+            <Route exact path="/newUser" element={<NewUser />} />
+            <Route exact path="/products" element={<ProductList />} />
+            <Route exact path="/product/:productsId" element={<Product />} />
+            <Route exact path="/newProduct" element={<NewProduct />} />
+          </>
+        )}
 
-  <Route exact path="/users" element={<UserList />} />
-  <Route exact path="/user/:userId" element={<User />} />
-  <Route exact path="/newUser" element={<NewUser />} />
-  <Route exact path="/products" element={<ProductList />} />
-  <Route exact path="/product/:productsId" element={<Product />} />
-  <Route exact path="/newProduct" element={<NewProduct />} />
-</Routes>
-
-
-
-</div>
+      </Routes>
+    </div>
 
   )
 }
