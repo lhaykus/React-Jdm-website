@@ -12,7 +12,7 @@ import { deleteProduct, getProducts } from "../../redux/apiCalls";
 
 const ProductList = () => {
     const dispatch = useDispatch();
-    const [data, setData] = useState(productRows);
+    //const [data, setData] = useState(productRows);
     const products = useSelector(state => state.product.products);
 
   useEffect(() => {
@@ -25,11 +25,11 @@ const ProductList = () => {
 
 
     const columns = [
-        { field: '_id', headerName: 'ID', width: 90 },
+        { field: '_id', headerName: 'ID', width: 250 },
         {
             field: 'product',
             headerName: 'Product',
-            width: 200,
+            width: 300,
             //rendering an avatar from the data in rows 
             renderCell: (params) => {
                 return (
@@ -41,15 +41,9 @@ const ProductList = () => {
             },
         },
         {
-            field: 'stock',
+            field: 'inStock',
             headerName: 'Stock',
-            width: 200,
-            editable: true,
-        },
-        {
-            field: 'status',
-            headerName: 'Status',
-            width: 200,
+            width: 140,
             editable: true,
         },
         {
