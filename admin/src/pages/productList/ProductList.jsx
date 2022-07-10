@@ -6,17 +6,26 @@ import { productRows } from "../../dummyData";
 import { Link } from "react-router-dom";
 import { useState } from 'react';
 import Topbar from '../../components/topbar/Topbar';
+import { useEffect } from 'react';
+import { useDispatch, useSelector } from "react-redux";
+import { deleteProduct, getProducts } from "../../redux/apiCalls";
 
 const ProductList = () => {
-
+    const dispatch = useDispatch();
     const [data, setData] = useState(productRows);
+    const products = useSelector(state => state.product.products);
 
-    const handleDelete = (id) => {
-        setData(data.filter((item) => item.id !== id));
-    };
+  useEffect(() => {
+    getProducts(dispatch);
+  }, [dispatch]);
+
+  const handleDelete = (id) => {
+    deleteProduct(id, dispatch);
+  };
+
 
     const columns = [
-        { field: 'id', headerName: 'ID', width: 90 },
+        { field: '_id', headerName: 'ID', width: 90 },
         {
             field: 'product',
             headerName: 'Product',
@@ -60,7 +69,7 @@ const ProductList = () => {
                         </Link>
                         <DeleteOutline
                             className="product-list-delete"
-                            onClick={() => handleDelete(params.row.id)}
+                            onClick={() => handleDelete(params.row._id)}
                         />
                     </>
                 );
@@ -74,12 +83,13 @@ const ProductList = () => {
     return (
         <div className='product-list'>
             <Topbar />
-            <DataGrid className='product-grid'
-                rows={data}
-                columns={columns}
-                pageSize={10}
-                checkboxSelection
+            <DataGrid
+                rows={products}
                 disableSelectionOnClick
+                columns={columns}
+                getRowId={(row) => row._id}
+                pageSize={8}
+                checkboxSelection
             />
             <Link to='/newProduct'>
                 <button className="create-product-btn">Create New Product</button>
