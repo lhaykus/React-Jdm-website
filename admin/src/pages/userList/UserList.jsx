@@ -5,13 +5,23 @@ import { DeleteOutline } from "@material-ui/icons";
 import { userRows } from "../../dummyData";
 import { Link } from "react-router-dom";
 import Topbar from '../../components/topbar/Topbar';
+import { useDispatch, useSelector } from 'react-redux';
+import { useEffect } from 'react';
+import { getUsers, deleteUser } from '../../redux/apiCalls';
 
 
 const UserList = () => {
-  const [data, setData] = useState(userRows);
+  const dispatch = useDispatch();
+  //const [data, setData] = useState(userRows);
+  const users = useSelector(state => state.user.users);
+
+  useEffect(() => {
+    getUsers(dispatch);
+  }, [dispatch]);
+
 
   const handleDelete = (id) => {
-    setData(data.filter((item) => item.id !== id));
+    deleteUser(id, dispatch);
   };
 
   const columns = [
@@ -70,15 +80,15 @@ const UserList = () => {
   ];
 
 
-
   return (
 
     <div className='user-list'>
       <Topbar />
       <DataGrid className='user-list-data-grid'
-        rows={data}
+        rows={users}
         columns={columns}
-        pageSize={5}
+        getRowId={(row) => row._id}
+        pageSize={10}
         checkboxSelection
         disableSelectionOnClick
       />

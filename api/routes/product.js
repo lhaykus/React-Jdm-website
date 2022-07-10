@@ -5,17 +5,15 @@ const Product = require('../models/Product');
 //POST/Create request
 router.post('/', verifyTokenAndAdmin, async (req, res) => {
     const newProduct = new Product(req.body);
-
     try {
         const savedProduct = await newProduct.save();
         res.status(200).json(savedProduct);
         
     } catch (error) {
-        res.status(500).json(error);
-        
+        res.status(500).json(error);  
     };
-
 });
+
 
 //Update/PUT request
 router.put('/:id', verifyTokenAndAuth, async (req, res) => {

@@ -85,6 +85,7 @@ router.get("/income", verifyTokenAndAdmin, async (req, res) => {
   try {
     const income = await Order.aggregate([
       {
+        //conditional object...if there is a prodcut id create a new condition
         $match: {
           createdAt: { $gte: previousMonth },
           ...(productId && {

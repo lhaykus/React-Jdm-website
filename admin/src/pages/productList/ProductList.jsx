@@ -58,7 +58,7 @@ const ProductList = () => {
             renderCell: (params) => {
                 return (
                     <>
-                        <Link to={"/product/" + params.row.id}>
+                        <Link to={"/product/" + params.row._id}>
                             <button className="product-list-edit">Edit</button>
                         </Link>
                         <DeleteOutline
@@ -82,7 +82,7 @@ const ProductList = () => {
                 disableSelectionOnClick
                 columns={columns}
                 getRowId={(row) => row._id}
-                pageSize={8}
+                pageSize={10}
                 checkboxSelection
             />
             <Link to='/newProduct'>

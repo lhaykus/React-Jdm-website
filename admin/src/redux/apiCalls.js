@@ -1,5 +1,5 @@
 import { loginFailure, loginStart, loginSuccess } from "./userRedux";
-import { publicRequest, userRequest } from "./requestMethods";
+import { publicRequest, userRequest } from "../redux/requestMethods";
 import {
   getProductFailure,
   getProductStart,
@@ -14,6 +14,20 @@ import {
   addProductStart,
   addProductSuccess,
 } from "./productRedux";
+import {
+  getUserFailure,
+  getUserStart,
+  getUserSuccess,
+  deleteUserFailure,
+  deleteUserStart,
+  deleteUserSuccess,
+  updateUserFailure,
+  updateUserStart,
+  updateUserSuccess,
+  addUserFailure,
+  addUserStart,
+  addUserSuccess,
+} from './userRedux';
 
 export const login = async (dispatch, user) => {
   dispatch(loginStart());
@@ -54,6 +68,7 @@ export const updateProduct = async (id, product, dispatch) => {
     dispatch(updateProductFailure());
   }
 };
+
 export const addProduct = async (product, dispatch) => {
   dispatch(addProductStart());
   try {
@@ -61,5 +76,51 @@ export const addProduct = async (product, dispatch) => {
     dispatch(addProductSuccess(res.data));
   } catch (err) {
     dispatch(addProductFailure());
+  }
+};
+
+
+//USERS
+
+export const getUsers = async (dispatch) => {
+  dispatch(getUserStart());
+  try {
+    const res = await publicRequest.get("/users");
+    dispatch(getUserSuccess(res.data));
+  } catch (err) {
+    dispatch(getUserFailure());
+  }
+};
+
+
+export const deleteUser = async (id, dispatch) => {
+  dispatch(deleteUserStart());
+  try {
+    // const res = await userRequest.delete(`/products/${id}`);
+    dispatch(deleteUserSuccess(id));
+  } catch (err) {
+    dispatch(deleteUserFailure());
+  }
+};
+
+
+export const updateUser = async (id, user, dispatch) => {
+  dispatch(updateUserStart());
+  try {
+    // update
+    dispatch(updateUserSuccess({ id, user }));
+  } catch (err) {
+    dispatch(updateUserFailure());
+  }
+};
+
+
+export const addUser = async (id, user, dispatch) => {
+  dispatch(addUserStart());
+  try {
+    const res = await userRequest.post(`/users`, user);
+    dispatch(addUserSuccess(res.data));
+  } catch (err) {
+    dispatch(addUserFailure());
   }
 };

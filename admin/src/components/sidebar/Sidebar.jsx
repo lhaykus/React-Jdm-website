@@ -36,6 +36,12 @@ const Sidebar = () => {
                             <TrendingUp className="sidebar-icon" />
                             Sales
                         </li>
+                        <Link to="/login" className="link">
+                            <li className="sidebar-list-item active">
+                                <Apps className="sidebar-icon" />
+                                Login
+                            </li>
+                        </Link>
                     </ul>
                 </div>
                 <div className="sidebar-menu ">
