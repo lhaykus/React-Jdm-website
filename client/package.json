@@ -21,8 +21,13 @@
     "react-stripe-checkout": "^2.6.3",
     "redux-persist": "^6.0.0",
     "styled-components": "^5.3.5",
-    "web-vitals": "^2.1.4"
+    "web-vitals": "^2.1.4",
+    "@material-ui/data-grid": "^4.0.0-alpha.29",
+    "firebase": "^9.9.0",
+    "recharts": "^2.0.9",
+    "timeago.js": "^4.0.2"
   },
+  
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",

@@ -32,6 +32,9 @@ function Login() {
         <Link to='/signup'>
         <Button className='register-btn' variant='contained' color='primary'>Sign Up</Button>
         </Link>
+        <Link to='/admin'>
+        <Button className='register-btn' variant='contained' color='primary'>Admin Log In</Button>
+        </Link>
       </Box>
 
       

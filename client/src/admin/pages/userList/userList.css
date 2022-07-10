@@ -1,0 +1,68 @@
+.user-list {
+    flex: 4;
+}
+
+.userlist-user {
+    display: flex;
+    align-items: center;
+}
+
+.userlist-img {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 10px;
+}
+
+.userlist-delete {
+    margin: 20px;
+    color: red;
+    cursor: pointer;
+}
+
+.create-user-btn {
+    border-radius: 5px;
+    width: 150px;
+    height: 60px;
+    border: none;
+    margin: 20px;
+    padding: 5px;
+    cursor: pointer;
+    background-color: rgb(16, 189, 202);
+    color: white;
+    font-weight: 600;
+}
+
+
+
+@media screen and (max-width: 1200px) {
+    .user-list-data-grid {
+        width: 50%;
+        height: 50%;
+        left: 6rem;
+
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .user-list-data-grid {
+        margin-bottom: 100px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 50%;
+        height: 50%;
+        left: 6rem;
+    }
+}
+
+
+@media screen and (max-width: 1200px) {
+    .user-list-data-grid  {
+        width: 50%;
+        height: 50%;
+        left: 6rem;
+
+    }
+}

@@ -24,6 +24,11 @@ mongoose.connect(process.env.MONGO_URL || 'mongodb://localhost/jdm-website')
             console.log(err);
 });
 
+if (process.env.NODE_ENV === 'production') {
+    app.use(express.static(path.join(__dirname, '../client/build')));
+  }
+  
+
 //allowing use of json files 
 app.use(cors());
 app.use(express.json());
