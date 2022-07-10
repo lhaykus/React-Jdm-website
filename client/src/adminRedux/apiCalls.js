@@ -42,7 +42,7 @@ export const login = async (dispatch, user) => {
 export const getProducts = async (dispatch) => {
   dispatch(getProductStart());
   try {
-    const res = await publicRequest.get("/admin/items");
+    const res = await publicRequest.get("/admin/products");
     dispatch(getProductSuccess(res.data));
   } catch (err) {
     dispatch(getProductFailure());
@@ -72,7 +72,7 @@ export const updateProduct = async (id, product, dispatch) => {
 export const addProduct = async (product, dispatch) => {
   dispatch(addProductStart());
   try {
-    const res = await userRequest.post(`/admin/items`, product);
+    const res = await userRequest.post(`/admin/products`, product);
     dispatch(addProductSuccess(res.data));
   } catch (err) {
     dispatch(addProductFailure());
@@ -85,7 +85,7 @@ export const addProduct = async (product, dispatch) => {
 export const getUsers = async (dispatch) => {
   dispatch(getUserStart());
   try {
-    const res = await publicRequest.get("/admin/users");
+    const res = await publicRequest.get("/users");
     dispatch(getUserSuccess(res.data));
   } catch (err) {
     dispatch(getUserFailure());
@@ -118,7 +118,7 @@ export const updateUser = async (id, user, dispatch) => {
 export const addUser = async (id, user, dispatch) => {
   dispatch(addUserStart());
   try {
-    const res = await userRequest.post(`/admin/users`, user);
+    const res = await userRequest.post(`/users`, user);
     dispatch(addUserSuccess(res.data));
   } catch (err) {
     dispatch(addUserFailure());

@@ -2,6 +2,10 @@
     flex: 4;
 }
 
+.user-list-data-grid {
+    height: 200%;
+}
+
 .userlist-user {
     display: flex;
     align-items: center;

@@ -5,13 +5,13 @@ import LargeWidget from '../../adminComponents/largeWidget/LargeWidget';
 import SmallWidget from '../../adminComponents/smallWidget/SmallWidget';
 import './home.css';
 import Topbar from '../../adminComponents/topbar/Topbar';
-import SideBar from '../../adminComponents/sidebar/Sidebar';
-
+import Sidebar from '../../adminComponents/sidebar/Sidebar';
 import { useState } from 'react';
 import { useMemo } from 'react';
 import { useEffect } from 'react';
 import { userRequest } from '../../adminRedux/requestMethods';
-import { RssFeed } from '@material-ui/icons';
+
+
 
 
 const Home = () => {
@@ -63,6 +63,7 @@ const Home = () => {
   return (
     <div className='home'>
       <Topbar />
+      <br />  <br />  <br />
       <FeaturedInfo />
       <Chart data={userStats}
         title="User Stats"

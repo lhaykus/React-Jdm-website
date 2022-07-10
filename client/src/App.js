@@ -43,7 +43,7 @@ function App() {
 
       <div className='container'>
 
-        <Sidebar />
+      
         <Routes>
           <Route path='/login' element={<AdminLogin />} />
           {admin && (
@@ -52,8 +52,8 @@ function App() {
               <Route exact path="/users" element={<UserList />} />
               <Route exact path="/user/:userId" element={<User />} />
               <Route exact path="/newUser" element={<NewUser />} />
-              <Route exact path="/products" element={<AdminProductList />} />
-              <Route exact path="/product/:productsId" element={<AdminProduct />} />
+              <Route exact path="/admin/products" element={<AdminProductList />} />
+              <Route exact path="/admin/product/:productsId" element={<AdminProduct />} />
               <Route exact path="/newProduct" element={<NewProduct />} />
             </>
           )}

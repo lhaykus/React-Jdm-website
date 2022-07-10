@@ -18,6 +18,8 @@ const User = () => {
     
     return (
         <div className="user">
+            <Topbar />
+            <br />  <br />  <br />
             <div className="user-title-container">
                 <h1 className="user-title">Edit User</h1>
                 <button className='add-user-btn'>Create</button>

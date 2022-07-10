@@ -89,6 +89,8 @@ const UserList = () => {
   return (
 
     <div className='user-list'>
+      <Topbar />
+      <br />   <br />  <br />  <br />  <br />  <br />  <br />
       <DataGrid className='user-list-data-grid'
         rows={users}
         columns={columns}
