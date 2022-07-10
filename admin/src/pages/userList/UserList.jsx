@@ -41,6 +41,12 @@ const UserList = () => {
       },
     },
     {
+      field: 'fullName',
+      headerName: 'Full Name',
+      width: 200,
+      editable: true,
+    },
+    {
       field: 'email',
       headerName: 'Email',
       width: 200,
@@ -49,7 +55,7 @@ const UserList = () => {
     {
       field: 'status',
       headerName: 'Status',
-      width: 200,
+      width: 150,
       editable: true,
     },
     {
@@ -66,12 +72,12 @@ const UserList = () => {
           
           <>
           
-            <Link to={"/user/" + params.row.id}>
+            <Link to={"/user/" + params.row._id}>
               <button className="userListEdit">Edit</button>
             </Link>
             <DeleteOutline
               className="userlist-delete"
-              onClick={() => handleDelete(params.row.id)}
+              onClick={() => handleDelete(params.row._id)}
             />
           </>
         );

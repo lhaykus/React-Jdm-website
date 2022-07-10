@@ -26,7 +26,17 @@ const userSchema = new Schema({
         type: Boolean,
         default: false,
     },
-    img: {type: String}
+    avatar: {type: String},
+
+    phoneNumber: {
+        type: Number, 
+        required: true,
+        unique: true
+    },
+    country: {
+        type: String, 
+        required: true,
+    },
 },
 { timestamps: true },
 );
