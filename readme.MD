@@ -40,7 +40,7 @@ those who sign up!
 ![shopandcart](/client/src/assets/images/shop.gif)
 
 ### Learn More and Admin Panel
-![learnmoreadminpanel](/client/src/assets/images/learnmoreadmin.gif)
+
 
 ## Future Developments
 - [] - Remove/edit items in cart
@@ -50,4 +50,4 @@ those who sign up!
 
 - Lama Dev(https://www.youtube.com/c/LamaDev) - E-commerence Redux MERN series helped me to create this e-commerence site and admin page 
 
--Pexels.com for the images 
+- Pexels.com for the images 
