@@ -27,7 +27,6 @@
     "recharts": "^2.0.9",
     "timeago.js": "^4.0.2"
   },
-  
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",

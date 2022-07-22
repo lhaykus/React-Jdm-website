@@ -34,7 +34,7 @@ export default function Topbar() {
           </li>
           <br/>
         </Link>
-        <Link to="/admin/products" className="link">
+        <Link to="/adminProducts" className="link">
           <li className="sidebar-list-item">
             <Store className="sidebar-icon" />
             Products

@@ -12,7 +12,7 @@ import { deleteProduct, getProducts } from "../../adminRedux/apiCalls";
 const ProductList = () => {
     const dispatch = useDispatch();
     //const [data, setData] = useState(productRows);
-    const products = useSelector(state => state.product.products);
+    const adminProduct = useSelector(state => state.product.products);
 
   useEffect(() => {
     getProducts(dispatch);
@@ -57,7 +57,7 @@ const ProductList = () => {
             renderCell: (params) => {
                 return (
                     <>
-                        <Link to={"/products" + params.row._id}>
+                        <Link to={"/product/" + params.row._id}>
                             <button className="product-list-edit">Edit</button>
                         </Link>
                         <DeleteOutline
@@ -77,14 +77,14 @@ const ProductList = () => {
         <div className='product-list'>
             <Topbar />
             <DataGrid
-                rows={products}
+                rows={adminProduct}
                 disableSelectionOnClick
                 columns={columns}
                 getRowId={(row) => row._id}
                 pageSize={10}
                 checkboxSelection
             />
-            <Link to='/admin/newProduct'>
+            <Link to='/newProduct'>
                 <button className="create-product-btn">Create New Product</button>
             </Link>
 

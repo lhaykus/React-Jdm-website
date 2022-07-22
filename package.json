@@ -3,11 +3,11 @@
   "name": "react-jdm-website",
   "version": "1.0.0",
   "description": "",
-  "main": "server/server.js",
+  "main": "server.js",
   "scripts": {
-    "start": "node server/server.js",
+    "start": "node server.js",
     "develop": "concurrently \"cd server && npm run watch\" \"cd client && npm start\"",
-    "install": "cd server && npm i && cd ../client && npm i",
+    "install": "cd client && npm run build",
     "seed": "cd server && npm run seed",
     "build": "cd client && npm run build",
     "heroku-postbuild": "cd client && npm run build"

@@ -18,7 +18,14 @@
 
 
 ## App View
+### Home Page
+![homepage](/client/src/assets/images/homepage.gif)
 
+### Shop and Cart
+![shopandcart](/client/src/assets/images/shop.gif)
+
+### Learn More and Admin Panel
+![learnmoreadminpanel](/client/src/assets/images/learnmoreadmin.gif)
 
 ## Future Developments
 

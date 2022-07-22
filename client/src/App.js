@@ -52,13 +52,14 @@ function App() {
               <Route exact path="/users" element={<UserList />} />
               <Route exact path="/user/:userId" element={<User />} />
               <Route exact path="/newUser" element={<NewUser />} />
-              <Route exact path="/admin/products" element={<AdminProductList />} />
-              <Route exact path="/admin/product/:productsId" element={<AdminProduct />} />
+              <Route exact path="/admin/produts" element={<AdminProductList />} />
+              <Route exact path="/adminProducts/:productsId" element={<AdminProduct />} />
               <Route exact path="/newProduct" element={<NewProduct />} />
             </>
           )}
 
         </Routes>
+        <Scroll />
       </div>
 
 

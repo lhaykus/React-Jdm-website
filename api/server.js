@@ -24,9 +24,9 @@ mongoose.connect(process.env.MONGO_URL || 'mongodb://localhost/jdm-website')
             console.log(err);
 });
 
-if (process.env.NODE_ENV === 'production') {
-    app.use(express.static(path.join(__dirname, '../client/build')));
-  }
+//if (process.env.NODE_ENV === 'production') {
+ //   app.use(express.static(path.join(__dirname, '../client/build')));
+ // }
   
 
 //allowing use of json files 
@@ -38,6 +38,13 @@ app.use('/api/products', productsRoute);
 app.use('/api/cart', cartRoute);
 app.use('/api/orders', orderRoute);
 app.use('/api/checkout', stripeRoute);
+
+
+//app.use(express.static(path.join(__dirname, "/client")));
+
+//app.get('*', (req, res) => {
+ // res.sendFile(path.join(__dirname, '/client/build', 'index.html'));
+//});
 
 
 app.listen(PORT, () => {
