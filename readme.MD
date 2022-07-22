@@ -49,3 +49,5 @@ those who sign up!
 ## Credits
 
 - Lama Dev(https://www.youtube.com/c/LamaDev) - E-commerence Redux MERN series helped me to create this e-commerence site and admin page 
+
+-Pexels.com for the images 
